@@ -1,0 +1,50 @@
+{
+    "1": {
+        "Date": "11:00 01.03.2023",
+        "Supplier": "66428 Н ",
+        "Availability": ">4",
+        "Price": 5372
+    },
+    "2": {
+        "Date": "11:00 01.03.2023",
+        "Supplier": "3111871 Н ",
+        "Availability": ">4",
+        "Price": 5519
+    },
+    "3": {
+        "Date": "11:00 25.04.2023",
+        "Supplier": "1102269 EU ",
+        "Availability": ">4",
+        "Price": 6302
+    },
+    "4": {
+        "Date": "16:01 02.03.2023",
+        "Supplier": "391145 Н ",
+        "Availability": ">4",
+        "Price": 7679
+    },
+    "5": {
+        "Date": "13:30 09.03.2023",
+        "Supplier": "7319932 Н ",
+        "Availability": ">4",
+        "Price": 7817
+    },
+    "6": {
+        "Date": "14:01 02.03.2023",
+        "Supplier": "3479044 ",
+        "Availability": ">4",
+        "Price": 8115
+    },
+    "7": {
+        "Date": "11:00 06.03.2023",
+        "Supplier": "7367437 Н ",
+        "Availability": ">4",
+        "Price": 8228
+    },
+    "8": {
+        "Date": "11:00 02.03.2023",
+        "Supplier": "258171 Н ",
+        "Availability": "4",
+        "Price": 8517
+    }
+}
