@@ -1,289 +1,1368 @@
+<!DOCTYPE html>
+<html lang="ru" style="font-size: ">
+    <head>
+        <meta charset="utf-8">
+        <title>Поиск запчасти None</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=1100, height=device-height">
+		<link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
+        <link rel="icon" href="/favicon.svg" type="image/x-icon">
+
+        <link rel="apple-touch-icon" sizes="72x72" href="/local/templates/technoparts_v2/app/images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/local/templates/technoparts_v2/app/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/local/templates/technoparts_v2/app/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/local/templates/technoparts_v2/app/images/favicon/manifest.json">
+        <link rel="mask-icon" href="/local/templates/technoparts_v2/app/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="yandex-verification" content="cf2f95301176448e" />
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#000">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="description" content="Мы предлагаем широкий ассортимент по адекватным ценам." />
+<link href="/bitrix/js/main/core/css/core.min.css?15974549412854" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/panel/main/popup.min.css?159745495920704" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/components/linemedia.auto/search.results/css/debug.css?15974549385728" type="text/css"  rel="stylesheet" />
+<link href="/local/templates/.default/components/linemedia.auto/search.results/devinsight/style.css?16110783827859" type="text/css"  rel="stylesheet" />
+<link href="/local/templates/.default/components/linemedia.auto/part.404.request/modal/style.css?1600986923164" type="text/css"  rel="stylesheet" />
+<link href="/local/templates/technoparts_v2/app/libs/jquery.fancybox/jquery.fancybox.min.css?160098692414065" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/technoparts_v2/app/libs/select2/select2.css?160098692417619" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/technoparts_v2/app/libs/font-awesome/fontawesome-5.0.css?160098692436585" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/technoparts_v2/app/libs/bootstrap/bootstrap.css?1600986924146054" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/technoparts_v2/app/libs/datetimepicker/bootstrap-datetimepicker.css?16009869249024" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/technoparts_v2/app/libs/animate/animate.css?160098692472259" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/technoparts_v2/app/libs/inputtel/css/intlTelInput.css?160098692427961" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/technoparts_v2/app/libs/bootstrap-tour/bootstrap-tour.min.css?16009869241790" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/technoparts_v2/app/css/compability.css?16596079946476" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/technoparts_v2/app/css/main.css?166331515165309" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/.default/components/bitrix/menu/horizontal_multilevel/style.css?16009869231165" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/.default/components/bitrix/breadcrumb/.default/style.css?1600986923228" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/components/bitrix/eshop.socnet.links/templates/.default/style.min.css?16262456821037" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/components/devinsight/delivery/templates/v02/style.css?16009869232301" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/include/func/cookies.css?16767114861271" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/technoparts_v2/styles.css?160098692429" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/technoparts_v2/template_styles.css?166331515119263" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1677775324','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'fab3cbe98122f0c5ae6f1e2643456985'});</script>
+
+
+<script type="text/javascript" src="/bitrix/js/main/jquery/jquery-1.8.3.min.js?159745494193636"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core.min.js?159745494070993"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_ajax.min.js?159745494020978"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_window.min.js?159745494174917"></script>
+
+
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/jquery/dist/jquery.min.js?160098692486740"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/js/adjustBody.js?1600986924983"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/bootstrap-js/bootstrap.min.js?160098692437045"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/jquery.validate/jquery.validate.min.js?160098692422691"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/jquery.validate/messages.js?16009869241357"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/jquery.validate/messages_ru.js?16009869242052"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/jquery.cookie/jquery.cookie.js?16009869243140"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/jquery.floatThead/jquery.floatThead.min.js?160098692413519"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/jquery.tablesorter/jquery.tablesorter.js?160098692441934"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/jquery.babypaunch.spinner.js?16009869242732"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/datetimepicker/moment-with-locales.js?1600986924426041"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/datetimepicker/bootstrap-datetimepicker.min.js?160098692448881"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/stick_in_parent.js?16009869247858"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/jquery.fixheadertable.js?165910227311545"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/inputmask/jquery.inputmask.bundle.min.js?160098692489226"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/inputmask/phone.min.js?160098692431330"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/inputmask/phone-ru.min.js?1600986924328145"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/freewall/freewall.js?160098692447114"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/select2/select2.full.min.js?160098692474924"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/inputtel/js/intlTelInput.min.js?160098692423296"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/jquery.fancybox/jquery.fancybox.min.js?160098692461493"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/slick/slick.min.js?160098692442863"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/jquery.elevateZoom-3.0.8.min.js?160098692432922"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/libs/bootstrap-tour/bootstrap-tour.min.js?160098692420697"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/js/functions.js?161107838219401"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/js/diagram.js?16009869243613"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/js/main.js?163956998532624"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/js/form.return.js?16402673328470"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/js/basket.js?162624568214169"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/js/tour.js?16009869244767"></script>
+<script type="text/javascript" src="/local/templates/technoparts_v2/app/js/favourites.js?162624568211086"></script>
+<script type="text/javascript" src="/local/components/devinsight/search/templates/.default/script.js?16009869232895"></script>
+<script type="text/javascript" src="/local/components/devinsight/delivery/templates/v02/script.js?16110783822248"></script>
+<script type="text/javascript" src="/local/templates/.default/components/linemedia.auto/search.results/devinsight/parts.js?166970693713954"></script>
+<script type="text/javascript" src="/local/templates/.default/components/linemedia.auto/search.results/devinsight/script.js?162624568217663"></script>
+<script type="text/javascript" src="/local/templates/.default/components/linemedia.auto/part.404.request/modal/script.js?1600986923595"></script>
+<script type="text/javascript" src="/local/templates/.default/components/linemedia.auto/search.results/devinsight/js/tablesorter.js?160098692314150"></script>
+<script type="text/javascript" src="/local/templates/.default/components/linemedia.auto/search.results/devinsight/js/jquery.cookie.js?16009869233938"></script>
+
+    </head>
+
+    <body >
+        <div id="spin"></div>
+        <div class="spin-text">Подождите, идёт загрузка...</div>
+        
+        <div class="HEADER_blue">
+            <div class="HEADER_blue_container">
+                <div class="HEADER_menu">
+                                        <ul class="reset topmenu">
+			
+												
+					
+						<li class=" top-item HEADER_link" >
+							<a href="/index.php" class="">Главная</a>
+						</li>
+												
+						
+			
+									<li class="HEADER_link js-submenu">
+						<a  class="">
+                            О компании<i class="fas fa-angle-down"></i>
+                        </a>
+						<div class="submenu">
+										<ul>
+				
+			
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/about/"  >
+								<span class="submenu__item-name" 
+									 >
+									О компании	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/about/sale/"  >
+								<span class="submenu__item-name" 
+									 >
+									Акции	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/about/for-suppliers/"  >
+								<span class="submenu__item-name" 
+									 >
+									Информация для поставщиков	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/brands/"  >
+								<span class="submenu__item-name" 
+									 >
+									Наши бренды	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/about/geography/"  >
+								<span class="submenu__item-name" 
+									 >
+									География присутствия	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/news/"  >
+								<span class="submenu__item-name" 
+									 >
+									Новости	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/about/vacancy/"  >
+								<span class="submenu__item-name" 
+									 >
+									Вакансии	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/api/"  >
+								<span class="submenu__item-name" 
+									 >
+									Сервис API	
+								</span>
+							</a>
+						</li>
+						
+												
+											</ul>		
+				</li>
+					
+			
+									<li class="HEADER_link js-submenu">
+						<a  class="">
+                            Каталоги<i class="fas fa-angle-down"></i>
+                        </a>
+						<div class="submenu">
+										<ul>
+				
+			
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/autocatalog/"  >
+								<span class="submenu__item-name" 
+									 >
+									Оригинальные каталоги	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/tecdoc/"  >
+								<span class="submenu__item-name" 
+									 >
+									Каталог TecDoc	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/accessories/"  >
+								<span class="submenu__item-name" 
+									 >
+									Каталог аксессуаров	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/catalog-nac-fortech/"  >
+								<span class="submenu__item-name" 
+									 >
+									Каталог NAC / Fortech	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/foreign/"  >
+								<span class="submenu__item-name" 
+									 >
+									Запчасти для иномарок	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/instrument/"  >
+								<span class="submenu__item-name" 
+									 >
+									Инструменты	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/liqvids/"  >
+								<span class="submenu__item-name" 
+									 >
+									Тех жидкости	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/electrics/"  >
+								<span class="submenu__item-name" 
+									 >
+									Аккумуляторы и электрика	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/to/"  >
+								<span class="submenu__item-name" 
+									 >
+									Запчасти для ТО	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/avto-aksessuar/"  >
+								<span class="submenu__item-name" 
+									 >
+									Автомобильные принадлежности	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/stekloochistitel/"  >
+								<span class="submenu__item-name" 
+									 >
+									Стеклоочистители	
+								</span>
+							</a>
+						</li>
+						
+												
+											</ul>		
+				</li>
+					
+			
+									<li class="HEADER_link js-submenu">
+						<a  class="">
+                            Условия работы<i class="fas fa-angle-down"></i>
+                        </a>
+						<div class="submenu">
+										<ul>
+				
+			
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/about/delivery-payment/"  >
+								<span class="submenu__item-name" 
+									 >
+									Оплата и доставка	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/about/howto/"  >
+								<span class="submenu__item-name" 
+									 >
+									Как купить	
+								</span>
+							</a>
+						</li>
+						
+												
+						
+												
+																	<li class="submenu__item">
+							<a class="" href="/terms/"  >
+								<span class="submenu__item-name" 
+									 >
+									Условия возврата	
+								</span>
+							</a>
+						</li>
+						
+												
+											</ul>		
+				</li>
+					
+												
+					
+						<li class=" top-item HEADER_link" >
+							<a href="/contacts/" class="">Контакты</a>
+						</li>
+												
+											</ul>		
+				</li>
+					
+																														
+				</ul>
 
 
 
-<!doctype html><!--[if IE 8]><html class="a-no-js a-lt-ie10 a-lt-ie9 a-ie8" data-19ax5a9jf="dingo"><![endif]--><!--[if IE 9]><html class="a-no-js a-lt-ie10 a-ie9" data-19ax5a9jf="dingo"><![endif]--><!--[if !IE]><!--><html class="a-no-js" data-19ax5a9jf="dingo"><!--<![endif]--><head><script>var aPageStart = (new Date()).getTime();</script><meta charset="utf-8"> <meta property="og:image" content=https://m.media-amazon.com/images/S/sash/gje4y522toZQB1l.png />
-<title dir="ltr">IMDbPro Official Site | Start Your Free Trial</title> <link rel="shortcut icon" href="https://m.media-amazon.com/images/S/sash/AvwPSwr7$w8fgmc.ico" />
-<link rel="apple-touch-icon" href="https://m.media-amazon.com/images/S/sash/zitGXdV7DR8RFeo.png" />
-<link rel="apple-touch-icon" sizes="72x72" href="https://m.media-amazon.com/images/S/sash/2RrWZfB2tDvXFfs.png" />
-<link rel="apple-touch-icon" sizes="96x96" href="https://m.media-amazon.com/images/S/sash/jdJDWZ9iRWJ4R1i.png" />
-<link rel="apple-touch-icon" sizes="120x120" href="https://m.media-amazon.com/images/S/sash/fFIZv5nENenPGIn.png" />
-<link rel="apple-touch-icon" sizes="152x152" href="https://m.media-amazon.com/images/S/sash/Hbel7FWOmNDzhoK.png" />
-<link rel="apple-touch-icon" sizes="192x192" href="https://m.media-amazon.com/images/S/sash/GQmfueRbQfFF563.png" />
-<link rel="stylesheet" href="https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC|01ZTHTZObnL.css,41tGz3DNCrL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2L.css,21P6CS3L9LL.css,01oDR3IULNL.css,41EYhgiTpRL.css,01XPHJk60-L.css,01smHc51S9L.css,21aPhFy+riL.css,11gneA3MtJL.css,21fecG8pUzL.css,11a5wZbuKrL.css,01CFUgsA-YL.css,31C80IiXalL.css,11qour3ND0L.css,11gKCCKQV+L.css,11061HxnEvL.css,11oHt2HYxnL.css,01uPgw4sNAL.css,11JQtnL-6eL.css,116v6uYvN6L.css,11jtXRmppwL.css,01QrWuRrZ-L.css,21uwtfqr5aL.css,11QyqG8yiqL.css,11K24eOJg4L.css,11F2+OBzLyL.css,01890+Vwk8L.css,11Y05DTEL6L.css,01cbS3UK11L.css,21F85am0yFL.css,01giMEP+djL.css_.css?AUIClients/AmazonUI#not-trident" />
-<link rel="stylesheet" href="https://images-na.ssl-images-amazon.com/images/I/31XC9AF4Y3L.css?AUIClients/IMDbProLandingPageAssets" />
-<link rel="stylesheet" href="https://images-na.ssl-images-amazon.com/images/I/01SdjaY0ZsL._RC|81MxSGBBs1L.css_.css?AUIClients/IMDbProSiteAssets" />
+                    
+                                    </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="HEADER_white">
+            <div class="HEADER_white_container">
+                <div class="HEADER_logo">
+                    <a href="/"><img src="/local/templates/technoparts_v2/app/images/logo.png"></a>
+                </div>
+                <form method="post" action="" class="js-search-form">
+	<div class="TYPE_SELECT">
+	    <div class="TYPE_SELECT_item gray-text">Поиск по:</div>
+	    <ul class="TYPE_SELECT_item reset">
+	        <li><label for="js-search-by-art" class="TYPE_SELECT_link js-search-by-art active">Артикулу детали</label></li>
+	        <li><label for="js-search-by-vin" class="TYPE_SELECT_link js-search-by-vin ">VIN номеру</label></li>
+	    </ul>
+	    <input type="radio" name="js-search-by" id="js-search-by-art" value="art" class="hidden" checked>
+	  	<input type="radio" name="js-search-by" id="js-search-by-vin" value="vin" class="hidden" >
+	</div>
+	<div class="SEARCH_wrapper">
+	    <input type="text" name="query" class="SEARCH_input" placeholder="Введите артикул детали" id="lm-auto-main-search-query-id" data-remapping="1" value="None">
+	    <button type="submit" class="SEARCH_btn_submit"></button>
+	</div>
+</form>
+                <div class="PERSONAL_LINKS PERSONAL_LINKS_UNAUTHORIZED">
+                                            <a href="/login/register/" class="btn btn-lg btn-outline">Регистрация</a>
+                        <a href="/personal/?backurl=%2Fauto%2Fsearch%2F%3Fq%3DNone" class="link-dashed">Войти</a>
+                                    </div>
+                <div class="TOP_BANNERS">
+        <a href="/brands/in-stock/">
+        <img src="/upload/iblock/be1/2.png"/>
+    </a>
+        <a href="/brands/in-stock/">
+        <img src="/upload/iblock/a78/1.png"/>
+    </a>
+        <a href="/brands/in-stock/">
+        <img src="/upload/iblock/309/patron.png"/>
+    </a>
+        <a href="/brands/in-stock/">
+        <img src="/upload/iblock/027/Group 1130.png"/>
+    </a>
+        <a href="/brands/in-stock/">
+        <img src="/upload/iblock/309/Group 1128.png"/>
+    </a>
+    </div>
 <script>
-(function(d,g,S,G){function w(a){x&&x.tag&&x.tag(k(":","aui",a))}function m(a,b){x&&x.count&&x.count("aui:"+a,0===b?0:b||(x.count("aui:"+a)||0)+1)}function q(a){try{return a.test(navigator.userAgent)}catch(b){return!1}}function r(a){return"function"===typeof a}function z(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent("on"+b,c)}function k(a,b,c,d){b=b&&c?b+a+c:b||c;return d?k(a,b,d):b}function H(a,b,c){try{Object.defineProperty(a,b,{value:c,writable:!1})}catch(u){a[b]=
-c}return c}function va(a,b,c){var d=c=a.length,f=function(){d--||(T.push(b),U||(setTimeout(fa,0),U=!0))};for(f();c--;)ha[a[c]]?f():(C[a[c]]=C[a[c]]||[]).push(f)}function wa(a,b,c,d,f){var e=g.createElement(a?"script":"link");z(e,"error",d);f&&z(e,"load",f);a?(e.type="text/javascript",e.async=!0,c&&/AUIClients|images[/]I/.test(b)&&e.setAttribute("crossorigin","anonymous"),e.src=b):(e.rel="stylesheet",e.href=b);g.getElementsByTagName("head")[0].appendChild(e)}function ia(a,b){return function(c,u){function f(){wa(b,
-c,e,function(b){V?m("resource_unload"):e?(e=!1,m("resource_retry"),f()):(m("resource_error"),a.log("Asset failed to load: "+c));b&&b.stopPropagation?b.stopPropagation():d.event&&(d.event.cancelBubble=!0)},u)}if(ja[c])return!1;ja[c]=!0;m("resource_count");var e=!0;return!f()}}function xa(a,b,c){for(var d={name:a,guard:function(c){return b.guardFatal(a,c)},guardTime:function(a){return b.guardTime(a)},logError:function(c,e,n){b.logError(c,e,n,a)}},f=[],e=0;e<c.length;e++)I.hasOwnProperty(c[e])&&(f[e]=
-W.hasOwnProperty(c[e])?W[c[e]](I[c[e]],d):I[c[e]]);return f}function D(a,b,c,u,f){return function(e,g){function m(){var a=null;u?a=g:r(g)&&(X.start=A(),a=g.apply(d,xa(e,n,B)),X.end=A());if(b){I[e]=a;a=e;for(ha[a]=!0;(C[a]||[]).length;)C[a].shift()();delete C[a]}X.done=!0}var n=f||this;r(e)&&(g=e,e=G);b&&(e=e?e.replace(ka,""):"__NONAME__",Y.hasOwnProperty(e)&&n.error(k(", reregistered by ",k(" by ",e+" already registered",Y[e]),n.attribution),e),Y[e]=n.attribution);for(var B=[],J=0;J<a.length;J++)B[J]=
-a[J].replace(ka,"");var X=E[e||"anon"+ ++ya]={depend:B,registered:A(),namespace:n.namespace};e&&za.hasOwnProperty(e);c?m():va(B,n.guardFatal(e,m),e);return{decorate:function(a){W[e]=n.guardFatal(e,a)}}}}function la(a){return function(){var b=Array.prototype.slice.call(arguments);return{execute:D(b,!1,a,!1,this),register:D(b,!0,a,!1,this)}}}function Z(a,b){return function(c,d){d||(d=c,c=G);var f=this.attribution;return function(){y.push(b||{attribution:f,name:c,logLevel:a});var e=d.apply(this,arguments);
-y.pop();return e}}}function K(a,b){this.load={js:ia(this,!0),css:ia(this)};H(this,"namespace",b);H(this,"attribution",a)}function ma(){g.body?t.trigger("a-bodyBegin"):setTimeout(ma,20)}function F(a,b){a.className=aa(a,b)+" "+b}function aa(a,b){return(" "+a.className+" ").split(" "+b+" ").join(" ").replace(/^ | $/g,"")}function na(a){try{return a()}catch(b){return!1}}function L(){if(M){var a={w:d.innerWidth||h.clientWidth,h:d.innerHeight||h.clientHeight};5<Math.abs(a.w-ba.w)||50<a.h-ba.h?(ba=a,N=4,
-(a=l.mobile||l.tablet?450<a.w&&a.w>a.h:1250<=a.w)?F(h,"a-ws"):h.className=aa(h,"a-ws")):0<N&&(N--,oa=setTimeout(L,16))}}function Aa(a){(M=a===G?!M:!!a)&&L()}function Ba(){return M}"use strict";var O=S.now=S.now||function(){return+new S},A=function(a){return a&&a.now?a.now.bind(a):O}(d.performance),P=A(),za={},v=d.AmazonUIPageJS||d.P;if(v&&v.when&&v.register){P=[];for(var p=g.currentScript;p;p=p.parentElement)p.id&&P.push(p.id);return v.log("A copy of P has already been loaded on this page.","FATAL",
-P.join(" "))}var x=d.ue;w();w("aui_build_date:3.23.1-2023-02-24");var T=[],Ca=[],U=!1;var fa=function(){for(var a=setTimeout(fa,0),b=O();Ca.length||T.length;)if(T.shift()(),50<O()-b)return;clearTimeout(a);U=!1};var ha={},C={},ja={},V=!1;z(d,"beforeunload",function(){V=!0;setTimeout(function(){V=!1},1E4)});var ka=/^prv:/,Y={},I={},W={},E={},ya=0,ca=String.fromCharCode(92),y=[],pa=!0,qa=d.onerror;d.onerror=function(a,b,c,u,f){f&&"object"===typeof f||(f=Error(a,b,c),f.columnNumber=u,f.stack=b||c||u?
-k(ca,f.message,"at "+k(":",b,c,u)):G);var e=y.pop()||{};f.attribution=k(":",f.attribution||e.attribution,e.name);f.logLevel=e.logLevel;f.attribution&&console&&console.log&&console.log([f.logLevel||"ERROR",a,"thrown by",f.attribution].join(" "));y=[];qa&&(e=[].slice.call(arguments),e[4]=f,qa.apply(d,e))};K.prototype={logError:function(a,b,c,u){b={message:b,logLevel:c||"ERROR",attribution:k(":",this.attribution,u)};if(d.ueLogError)return d.ueLogError(a||b,a?b:null),!0;console&&console.error&&(console.log(b),
-console.error(a));return!1},error:function(a,b,c,d){a=Error(k(":",d,a,c));a.attribution=k(":",this.attribution,b);throw a;},guardError:Z(),guardFatal:Z("FATAL"),guardCurrent:function(a){var b=y[y.length-1];return b?Z(b.logLevel,b).call(this,a):a},guardTime:function(a){var b=y[y.length-1],c=b&&b.name;return c&&c in E?function(){var b=A(),d=a.apply(this,arguments);E[c].async=(E[c].async||0)+A()-b;return d}:a},log:function(a,b,c){return this.logError(null,a,b,c)},declare:D([],!0,!0,!0),register:D([],
-!0),execute:D([]),AUI_BUILD_DATE:"3.23.1-2023-02-24",when:la(),now:la(!0),trigger:function(a,b,c){var g=O();this.declare(a,{data:b,pageElapsedTime:g-(d.aPageStart||NaN),triggerTime:g});c&&c.instrument&&Q.when("prv:a-logTrigger").execute(function(b){b(a)})},handleTriggers:function(){this.log("handleTriggers deprecated")},attributeErrors:function(a){return new K(a)},_namespace:function(a,b){return new K(a,b)},setPriority:function(a){pa?pa=!1:this.log("setPriority only accept the first call.")}};var t=
-H(d,"AmazonUIPageJS",new K);var Q=t._namespace("PageJS","AmazonUI");Q.declare("prv:p-debug",E);t.declare("p-recorder-events",[]);t.declare("p-recorder-stop",function(){});H(d,"P",t);ma();if(g.addEventListener){var ra;g.addEventListener("DOMContentLoaded",ra=function(){t.trigger("a-domready");g.removeEventListener("DOMContentLoaded",ra,!1)},!1)}var h=g.documentElement,da=function(){var a=["O","ms","Moz","Webkit"],b=g.createElement("div");return{testGradients:function(){return!0},test:function(c){var d=
-c.charAt(0).toUpperCase()+c.substr(1);c=(a.join(d+" ")+d+" "+c).split(" ");for(d=c.length;d--;)if(""===b.style[c[d]])return!0;return!1},testTransform3d:function(){return!0}}}();v=h.className;var sa=/(^| )a-mobile( |$)/.test(v),ta=/(^| )a-tablet( |$)/.test(v),l={audio:function(){return!!g.createElement("audio").canPlayType},video:function(){return!!g.createElement("video").canPlayType},canvas:function(){return!!g.createElement("canvas").getContext},svg:function(){return!!g.createElementNS&&!!g.createElementNS("http://www.w3.org/2000/svg",
-"svg").createSVGRect},offline:function(){return navigator.hasOwnProperty&&navigator.hasOwnProperty("onLine")&&navigator.onLine},dragDrop:function(){return"draggable"in g.createElement("span")},geolocation:function(){return!!navigator.geolocation},history:function(){return!(!d.history||!d.history.pushState)},webworker:function(){return!!d.Worker},autofocus:function(){return"autofocus"in g.createElement("input")},inputPlaceholder:function(){return"placeholder"in g.createElement("input")},textareaPlaceholder:function(){return"placeholder"in
-g.createElement("textarea")},localStorage:function(){return"localStorage"in d&&null!==d.localStorage},orientation:function(){return"orientation"in d},touch:function(){return"ontouchend"in g},gradients:function(){return da.testGradients()},hires:function(){var a=d.devicePixelRatio&&1.5<=d.devicePixelRatio||d.matchMedia&&d.matchMedia("(min-resolution:144dpi)").matches;m("hiRes"+(sa?"Mobile":ta?"Tablet":"Desktop"),a?1:0);return a},transform3d:function(){return da.testTransform3d()},touchScrolling:function(){return q(/Windowshop|android|OS ([5-9]|[1-9][0-9]+)(_[0-9]{1,2})+ like Mac OS X|SOFTWARE=([5-9]|[1-9][0-9]+)(.[0-9]{1,2})+.*DEVICE=iPhone|Chrome|Silk|Firefox|Trident.+?; Touch/i)},
-ios:function(){return q(/OS [1-9][0-9]*(_[0-9]*)+ like Mac OS X/i)&&!q(/trident|Edge/i)},android:function(){return q(/android.([1-9]|[L-Z])/i)&&!q(/trident|Edge/i)},mobile:function(){return sa},tablet:function(){return ta},rtl:function(){return"rtl"===h.dir}};for(p in l)l.hasOwnProperty(p)&&(l[p]=na(l[p]));for(var ea="textShadow textStroke boxShadow borderRadius borderImage opacity transform transition".split(" "),R=0;R<ea.length;R++)l[ea[R]]=na(function(){return da.test(ea[R])});var M=!0,oa=0,ba=
-{w:0,h:0},N=4;L();z(d,"resize",function(){clearTimeout(oa);N=4;L()});var ua={getItem:function(a){try{return d.localStorage.getItem(a)}catch(b){}},setItem:function(a,b){try{return d.localStorage.setItem(a,b)}catch(c){}}};h.className=aa(h,"a-no-js");F(h,"a-js");!q(/OS [1-8](_[0-9]*)+ like Mac OS X/i)||d.navigator.standalone||q(/safari/i)||F(h,"a-ember");v=[];for(p in l)l.hasOwnProperty(p)&&l[p]&&v.push("a-"+p.replace(/([A-Z])/g,function(a){return"-"+a.toLowerCase()}));F(h,v.join(" "));h.setAttribute("data-aui-build-date",
-"3.23.1-2023-02-24");t.register("p-detect",function(){return{capabilities:l,localStorage:l.localStorage&&ua,toggleResponsiveGrid:Aa,responsiveGridEnabled:Ba}});q(/UCBrowser/i)||l.localStorage&&F(h,ua.getItem("a-font-class"));t.declare("a-event-revised-handling",!1);t.execute("RetailPageServiceWorker",function(){function a(a,b){f.controller&&a?(a={feature:"retail_service_worker_messaging",command:a},b&&(a.data=b),f.controller.postMessage(a)):a&&m("sw:sw_message_no_ctrl",1)}function b(a){var b=a.data;
-if(b&&"retail_service_worker_messaging"===b.feature&&b.command&&b.data){var c=b.data;a=d.ue;var e=d.ueLogError;switch(b.command){case "log_counter":a&&r(a.count)&&c.name&&a.count(c.name,0===c.value?0:c.value||1);break;case "log_tag":a&&r(a.tag)&&c.tag&&(a.tag(c.tag),b=d.uex,a.isl&&r(b)&&b("at"));break;case "log_error":e&&r(e)&&c.message&&e({message:c.message,logLevel:c.level||"ERROR",attribution:c.attribution||"RetailServiceWorker"});break;case "log_weblab_trigger":if(!c.weblab||!c.treatment)break;
-a&&r(a.trigger)?a.trigger(c.weblab,c.treatment):(m("sw:wt:miss"),m("sw:wt:miss:"+c.weblab+":"+c.treatment));break;default:m("sw:unsupported_message_command",1)}}}function c(){e.forEach(function(a){w(a)})}function h(a,b,c){if(b){a=q(/Chrome/i)&&!q(/Edge/i)&&!q(/OPR/i)&&!a.capabilities.isAmazonApp&&!q(new RegExp(ca+"bwv"+ca+"b"));var d="sw:browser:"+c+":";b.browser&&a&&(e.push(d+"supported"),b.browser.action(d,c));!a&&b.browser&&e.push(d+"unsupported")}}try{var f=navigator.serviceWorker}catch(n){w("sw:nav_err")}(function(){if(f){var c=
-function(){a("page_loaded",{rid:d.ue_id,mid:d.ue_mid,pty:d.ue_pty,sid:d.ue_sid,spty:d.ue_spty,furl:d.ue_furl})};z(f,"message",b);a("client_messaging_ready");t.when("load").execute(c);z(f,"controllerchange",function(){a("client_messaging_ready");"complete"===g.readyState&&c()})}})();var e=[],l=function(a,b){var c=d.uex,e=d.uet;a=k(":","aui","sw",a);"ld"===b&&r(c)?c("ld",a,{wb:1}):r(e)&&e(b,a,{wb:1})},p=function(a,b,c){function e(a){b&&r(b.failure)&&b.failure(a)}function g(){p=setTimeout(function(){w(k(":",
-"sw:"+n,h.TIMED_OUT));e({ok:!1,statusCode:h.TIMED_OUT,done:!1});l(n,"ld")},c||4E3)}var h={NO_CONTROLLER:"no_ctrl",TIMED_OUT:"timed_out",UNSUPPORTED_BROWSER:"unsupported_browser",UNEXPECTED_RESPONSE:"unexpected_response"},n=k(":",a.feature,a.command),p,q=!0;if("MessageChannel"in d&&f&&"controller"in f)if(f.controller){var B=new MessageChannel;B.port1.onmessage=function(c){(c=c.data)&&c.feature===a.feature&&c.command===a.command?(q&&(l(n,"cf"),q=!1),l(n,"af"),clearTimeout(p),c.done||g(),c.ok?b&&r(b.success)&&
-b.success(c):e(c),c.done&&l(n,"ld")):m(k(":","sw:"+n,h.UNEXPECTED_RESPONSE),1)};g();l(n,"bb");f.controller.postMessage(a,[B.port2])}else w(k(":","sw:"+a.feature,h.NO_CONTROLLER)),e({ok:!1,statusCode:h.NO_CONTROLLER,done:!0});else w(k(":","sw:"+a.feature,h.UNSUPPORTED_BROWSER)),e({ok:!1,statusCode:h.UNSUPPORTED_BROWSER,done:!0})};(function(){f?(l("ctrl_changed","bb"),f.addEventListener("controllerchange",function(){w("sw:ctrl_changed");l("ctrl_changed","ld")})):m(k(":","sw:ctrl_changed","sw_unsupp"),
-1)})();(function(){var a=function(){l(b,"ld");var a=d.uex;p({feature:"page_proxy",command:"request_feature_tags"},{success:function(b){b=b.data;Array.isArray(b)&&b.forEach(function(a){"string"===typeof a?w(k(":","sw:ppft",a)):m(k(":","sw:ppft","invalid_tag"),1)});m(k(":","sw:ppft","success"),1);x&&x.isl&&r(a)&&a("at")},failure:function(a){m(k(":","sw:ppft","error:"+(a.statusCode||"ppft_error")),1)}})};if("requestIdleCallback"in d){var b=k(":","ppft","callback_ricb");d.requestIdleCallback(a,{timeout:1E3})}else b=
-k(":","ppft","callback_timeout"),setTimeout(a,0);l(b,"bb")})();(function(a){var b=a.reg,g=a.unreg;f&&f.getRegistrations?(Q.when("A").execute(function(a){h(a,g,"unregister")}),z(d,"load",function(){Q.when("A").execute(function(a){h(a,b,"register");c()})})):(b&&b.browser&&e.push("sw:browser:register:unsupported"),g&&g.browser&&e.push("sw:browser:unregister:unsupported"),c())})({reg:{},unreg:{}})});t.declare("a-fix-event-off",!1);m("pagejs:pkgExecTime",A()-P)})(window,document,Date);
-(window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-na.ssl-images-amazon.com/images/I/61yXDIPmT-L._RC|11Y+5x+kkTL.js,51Am7NcREVL.js,11yKORv-GTL.js,11GgN1+C7hL.js,01+z+uIeJ-L.js,01VRMV3FBdL.js,21SDJtBU-PL.js,012FVc3131L.js,11rRjDLdAVL.js,516j7qaWchL.js,11kWu3cNjYL.js,11aKqyRXooL.js,11OREnu1epL.js,11qVTZscrRL.js,21ssiLNIZvL.js,0190vxtlzcL.js,51+N26vFcBL.js,01JYHc2oIlL.js,31nfKXylf6L.js,01ezj5Rkz1L.js,11bEz2VIYrL.js,31o2NGTXThL.js,01rpauTep4L.js,013DrXr5lxL.js_.js?AUIClients/AmazonUI');
-(window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-na.ssl-images-amazon.com/images/I/21ODRfN6MsL.js?AUIClients/IMDbProLandingPageAssets');
-(window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-na.ssl-images-amazon.com/images/I/21ZMwVh4T0L._RC|21OJDARBhQL.js,1140xMp++9L.js,411cVmdl12L.js,21eSNvaI9RL.js,61Yr5CdsEiL.js_.js?AUIClients/IMDbProSiteAssets');
+    $(function(){
+        topBannersShowNext();
+        setTimeout('topBannersShowNext()',10000);
+    });
+    function topBannersShowNext(){
+        if($(".TOP_BANNERS a.active").length == 0){
+            $(".TOP_BANNERS a").eq(0).addClass('active');
+        }else{
+            if($(".TOP_BANNERS a.active").next().is('a')){
+                $(".TOP_BANNERS a.active").removeClass('active').next().addClass('active');
+            }else{
+                $(".TOP_BANNERS a.active").removeClass('active');
+                $(".TOP_BANNERS a").eq(0).addClass('active');
+            }
+        }
+    }
 </script>
-<script>
-var ue_sid = "000-0000000-0000000"; // inject session id
-var ue_id = "4MYRKZH98GES6K87E04P"; // inject main request id
-</script>
-<style>
-@font-face {
-font-family: 'Glyphicons Regular';
-src: url('/api/fonts/glyphicons-regular-192.eot');
-src: url('/api/fonts/glyphicons-regular-192.eot?#iefix') format('embedded-opentype'),
-url('/api/fonts/glyphicons-regular-192.woff2') format('woff2'),
-url('/api/fonts/glyphicons-regular-192.woff') format('woff'),
-url('/api/fonts/glyphicons-regular-192.ttf') format('truetype'),
-url('/api/fonts/glyphicons-regular-192.svg#glyphiconsregular') format('svg');
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
-font-family: 'Glyphicons Halflings';
-src: url('/api/fonts/glyphicons-halflings-regular-192.eot');
-src: url('/api/fonts/glyphicons-halflings-regular-192.eot?#iefix') format('embedded-opentype'),
-url('/api/fonts/glyphicons-halflings-regular-192.woff2') format('woff2'),
-url('/api/fonts/glyphicons-halflings-regular-192.woff') format('woff'),
-url('/api/fonts/glyphicons-halflings-regular-192.ttf') format('truetype'),
-url('/api/fonts/glyphicons-halflings-regular-192.svg#glyphicons_halflingsregular') format('svg');
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
-font-family: 'Glyphicons Social';
-src: url('/api/fonts/glyphicons-social-regular.eot');
-src: url('/api/fonts/glyphicons-social-regular.eot?#iefix') format('embedded-opentype'),
-url('/api/fonts/glyphicons-social-regular.woff2') format('woff2'),
-url('/api/fonts/glyphicons-social-regular.woff') format('woff'),
-url('/api/fonts/glyphicons-social-regular.ttf') format('truetype'),
-url('/api/fonts/glyphicons-social-regular.svg#glyphicons_socialregular') format('svg');
-font-weight: normal;
-font-style: normal;
-}
-</style>
-</head><body id="splash" class="a-color-base-background a-aui_149818-c a-aui_152852-c a-aui_157141-c a-aui_160684-c a-aui_57326-c a-aui_72554-c a-aui_accessibility_49860-c a-aui_attr_validations_1_51371-c a-aui_bolt_62845-c a-aui_pci_risk_banner_210084-c a-aui_perf_130093-c a-aui_tnr_v2_180836-c a-aui_ux_113788-c a-aui_ux_114039-c a-aui_ux_138741-c a-aui_ux_145937-c a-aui_ux_60000-c"><div id="a-page"><script type="a-state" data-a-state="{&quot;key&quot;:&quot;a-wlab-states&quot;}">{"AUI_149818":null,"AUI_152852":null,"AUI_157141":null,"AUI_160684":null,"AUI_57326":null,"AUI_72554":null,"AUI_ACCESSIBILITY_49860":null,"AUI_ATTR_VALIDATIONS_1_51371":null,"AUI_BOLT_62845":null,"AUI_PCI_RISK_BANNER_210084":null,"AUI_PERF_130093":null,"AUI_TNR_V2_180836":null,"AUI_UX_113788":null,"AUI_UX_114039":null,"AUI_UX_138741":null,"AUI_UX_145937":null,"AUI_UX_60000":null}</script>
-<div id="page_container" class="a-container a-color-base-background"><div id="logged_out_header" class="a-section a-spacing-none"><div class="a-row a-grid-vertical-align a-grid-center content_container header_row"><div class="a-column a-span5 a-text-left"><a class="a-size- a-align- a-link- logo pro_color aok-block" href="https://pro.imdb.com/?ref_=spl_stkyhdr_i"></a></div><div class="a-column a-span7 a-text-right a-span-last"><div class="a-section aok-block"><div id="header_message" class="a-section a-spacing-none aok-inline-block aok-align-center"><span class="a-declarative" data-action="a-popover" data-a-popover="{&quot;position&quot;:&quot;triggerBottom&quot;, &quot;name&quot;:&quot;imdb_login_popover&quot;, &quot;closeButton&quot;: false}"><a id="imdb_pro_login_popover" href="javascript:void(0)" class="a-popover-trigger a-declarative"> Log In
-<i class="a-icon a-icon-popover"></i></a></span><div class="a-popover-preload" id="a-popover-imdb_login_popover"><div id="splash_login_dropdown" class="a-section"><div id="login_buttons" class="a-section a-spacing-small a-spacing-top-small"><div class="a-section a-spacing-none a-spacing-top-none a-padding-none login_url"><a data-bypassPublicRestriction="true" class="a-size- a-align- a-link-" href="https://pro.imdb.com/login/auth?u=https%3A%2F%2Fpro.imdb.com%2Ftitle%2Ftt0119567%2Fdetails%2F_ajax"><div id="login_with_amazon" class="a-box login_pro aok-align-center" style="width:285px; height:40px;"><div class="a-box-inner a-padding-small"><div class="a-fixed-right-grid"><div class="a-fixed-right-grid-inner" style="padding-right:0px"><div class="a-spacing-top-micro a-fixed-left-grid-col a-col-right" style="padding-left:0%;float:left;"><img alt="" src="https://m.media-amazon.com/images/G/01/imdbpro/logos/amazon_login_logo._CB1539729833_.png" class="login_logo aok-align-center" height="13px" width="40px"></div><div class="a-fixed-left-grid-col a-col-right" style="padding-left:4%;float:left;"><span class="a-size-medium login_text"> Log in with Amazon
-</span></div></div></div></div></div></a></div><div class="a-section a-spacing-none a-spacing-top-none a-padding-none login_url"><a data-bypassPublicRestriction="true" class="a-size- a-align- a-link-" href="https://pro.imdb.com/login/imdb?u=https%3A%2F%2Fpro.imdb.com%2Ftitle%2Ftt0119567%2Fdetails%2F_ajax"><div id="login_with_imdb" class="a-box a-spacing-top-base login_pro aok-align-center" style="width:285px; height:40px;"><div class="a-box-inner a-padding-small"><div class="a-fixed-right-grid"><div class="a-fixed-right-grid-inner" style="padding-right:0px"><div class="a-fixed-left-grid-col a-col-right" style="padding-left:0%;float:left;"><img alt="" src="https://m.media-amazon.com/images/G/01/imdbpro/logos/imdb_login_logo._CB1539729863_.png" class="login_logo aok-align-center" height="15px" width="35px"></div><div class="a-fixed-left-grid-col a-col-right" style="padding-left:6%;float:left;"><span class="a-size-medium login_text"> Log in with IMDb
-</span></div></div></div></div></div></a></div></div></div></div></div>
-<span class="a-button a-button-primary aok-inline-block"><span class="a-button-inner"><a href="https://pro.imdb.com/signup/tiers?ref_=spl_stkyhdr_signup" data-bypassPublicRestriction="true" class="a-button-text" role="button"><span class="a-size-"> Try for free
-</span></a></span></span>
-</div></div></div></div><div id="page_body" class="a-section a-spacing-none">
-<a name="slot_center-2"></a>
-<script type="text/javascript">if(typeof uet === 'function'){uet('bb','HeroWidget',{wb:1});}</script>
-<span class="ab_widget">
-<div id="hero_widget" class="a-section background-image-wrapper"><img alt="" src="https://m.media-amazon.com/images/G/01/IMDbPro/images/Phase5Final/MI_120722_PW_DuetImg_Land2.png" class="background-image" width="100%"><div class="a-section background-image-content min_height"><div class="a-section a-text-center content_container"><div class="a-section a-padding-large text_color_aui_secondary"><div class="a-row"><div class="a-column a-span6 a-spacing-none a-spacing-top-large"><div class="a-section a-spacing-large a-spacing-top-large a-text-center"><span class="a-size-extra-large"> The essential resource for the entertainment industry
-</span></div>
-<!-- prime content -->
-<div class="a-section a-spacing-double-large a-spacing-top-large a-text-center">
-<span class="a-button a-button-primary"><span class="a-button-inner"><a href="https://pro.imdb.com/signup/tiers?ref_=spl_hero_signup" data-bypassPublicRestriction="true" class="a-button-text" role="button"><span class="a-size-medium"> Try IMDbPro for free
-</span></a></span></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="CONTENT">
+            <div class="">
+                
+                <div class="BREADCRUMB ">
+                    <link href="/bitrix/css/main/font-awesome.css?159745493928777" type="text/css" rel="stylesheet" />
+<div class="bx-breadcrumb mb20 mt20">
+			<div class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+				
+				<a href="/" title="Главная" itemprop="url">
+					<span itemprop="title">Главная</span>
+				</a>
+			</div>
+			<div class="bx-breadcrumb-item">
+				<i class="fa fa-angle-right"></i>
+				<span>Поиск запчастей</span>
+			</div><div style="clear:both"></div></div>                </div>
+
+    <script>
+        Parts['items'] = [];
+        Parts['auth'] = 0 ;
+        Parts['baseRdo'] = 0;
+        //Parts['userRdo'] = 0;
+        Parts['userRdoActive'] = 0;
+    </script>
+
+
+
+
+
+<div id="requestPart" class="modal animated fadeIn" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    <form name="LM_AUTO_REQUEST_PART_FORM" action="/auto/search/?q=None" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="fab3cbe98122f0c5ae6f1e2643456985" /><input type="hidden" name="WEB_FORM_ID" value="2" />	
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h2 class="modal-title">Сообщить о поступлении товара</h2>
+      </div>
+      <div class="modal-body">
+        	
+					<div class="form">
+																														<div class="row form-group">
+								<div class="col-xs-4">
+									Имя<font color='red'><span class='form-required starrequired'>*</span></font>								</div>
+								<div class="col-xs-8">
+																		<input type="text" class="form-control" name="form_text_6" value="" size="0" />																																			</div>
+							</div>
+								
+																		<div class="row form-group">
+								<div class="col-xs-4">
+									E-mail<font color='red'><span class='form-required starrequired'>*</span></font>								</div>
+								<div class="col-xs-8">
+																		<input type="text" class="form-control" name="form_text_8" value="" size="0" />																																			</div>
+							</div>
+								
+																		<div class="row form-group">
+								<div class="col-xs-4">
+									Артикул<font color='red'><span class='form-required starrequired'>*</span></font>								</div>
+								<div class="col-xs-8">
+																		<input type="text" class="form-control" name="form_text_11" value="None" size="0" />																												<input type="hidden" name="form_text_11" value="None">
+																										</div>
+							</div>
+								
+																		<div class="row form-group">
+								<div class="col-xs-4">
+									Бренд<font color='red'><span class='form-required starrequired'>*</span></font>								</div>
+								<div class="col-xs-8">
+																		<input type="text" class="form-control" name="form_text_12" value="" size="0" />																																					<input type="hidden" name="form_text_12" value="">
+																	</div>
+							</div>
+								
+																		<div class="row form-group">
+								<div class="col-xs-4">
+									Комментарий								</div>
+								<div class="col-xs-8">
+																		<textarea name="form_textarea_10" cols="40" rows="5" class="form-control"></textarea>																																			</div>
+							</div>
+								
+										<p><font color='red'><span class='form-required starrequired'>*</span></font> - обязательные поля</p>
+					
+			</div>
+		      </div>
+      <div class="modal-footer">
+      	      		<input type="submit" class="btn btn-orange" name="web_form_submit" value="Добавить" />
+      	      </div>
+    </form>  
+    </div>
+  </div>
 </div>
+
+
+    <div class="CONTENT_white">
+        <div class="alert alert-warning mb0">
+            Внимание! Указанные цены действительны при условии самовывоза со склада в г. Москве и ежемесячном обороте от 1.900.000 рублей.
+            Для получения актуальных цен обязательно необходимо пройти <a href="/login/register/">регистрацию</a>.
+        </div>
+    </div>
+
+
+
+    <!-- catalog -->
+    <div class="catalog">
+
+        <!-- row -->
+        <div class="row">
+
+            <!-- content -->
+            <div class="col-xs-12 js-parts">
+                <!-- <div class="col-xs-12 js-parts"> -->
+                <div class="lm-auto-main-art-sought-404 alert alert-warning">К сожалению, запрошенный артикул <strong>None</strong> не найден.</div>
+                            </div>
+            <!-- content -->
+
+        </div>
+        <!-- row -->
+
+        
+
+        
+    </div>
+    <!-- catalog -->
+
+    <div class="CONTENT_white">
+        <div class="alert alert-warning mb0">
+            Уважаемый клиент, для получения большего числа кроссов, <a href="/personal/">авторизуйтесь</a>.
+        </div>
+    </div>
+
+
+<br>
+<br>
+			</div>
+			<!-- End of wrapper -->
+		</div>
+		<!-- End of CONTENT -->
+
+		<div class="FOOTER">
+			<ul class="reset">
+				<li><a href="/about/">О компании</a></li>
+				<li><a href="/autocatalog/">Каталоги</a></li>
+				<li><a href="/about/delivery-payment/">Оплата и доставка</a></li>
+				<li>
+					<div class="FOOTER_logo">
+              <a href="/"><img src="/local/templates/technoparts_v2/app/images/logo.png"></a>
+              <div class="FOOTER_phone">+7 (499) 281-81-80
 </div>
-<!-- Video/Image for the hero widget -->
-</div></div></div></div></div>
-</span>
-<script type="text/javascript">
-if(typeof uex === 'function'){uex('ld','HeroWidget',{wb:1});}
-</script>
-<a name="slot_center-3"></a>
-<script type="text/javascript">if(typeof uet === 'function'){uet('bb','HeroWidget',{wb:1});}</script>
-<span class="ab_widget">
-<div id="hero_widget" class="a-section background-image-wrapper"><img alt="" src="https://m.media-amazon.com/images/G/01/IMDbPro/images/spl_video_bg_web_20221209.png" class="background-image" width="100%"><div class="a-section background-image-content"><div class="a-section a-text-center content_container"><div class="a-section a-padding-extra-large white-text"><div class="a-row"><div class="a-column a-span6 a-spacing-none a-spacing-top-none"><div class="a-section a-spacing-extra-large a-spacing-top-double-large a-text-left"><span class="a-size-extra-large"> A new way to <strong>authentically represent</strong> yourself
-</span></div>
-<!-- prime content -->
-<!-- Marketing Landing Page Content -->
-<div id="hero_testimonial" class="a-section a-spacing-double-large a-spacing-top-double-large a-text-left"><div id="hero_testimonial_text" class="a-section"> <span class="a-size-base">&ldquo;IMDbPro will make it easier for casting directors, producers and others to discover and hire talent from all backgrounds for their projects.&rdquo;</span>
+          </div>
+        </li>
+				<li><a href="/about/vacancy/">Вакансии</a></li>
+				<li><a href="/about/howto/">Как купить</a></li>
+				<li><a href="/contacts/">Контакты</a></li>
+			</ul>
+            <div class="bx-socialsidebar">
+
+	<div class="bx-socialsidebar-group">
+		<ul>
+						<li><a class="fb bx-socialsidebar-icon" target="-blank" href="https://www.facebook.com/100553728281785"></a></li>
+						<li><a class="vk bx-socialsidebar-icon" target="-blank" href="https://vk.com/public193651307"></a></li>
+						<li><a class="in bx-socialsidebar-icon" target="-blank" href="https://www.instagram.com/v01_ru/"></a></li>
+						<li><a class="you bx-socialsidebar-icon" target="-blank" href="https://www.youtube.com/channel/UCnV9QGi05bb24S-A7PG7iww"></a></li>
+						<li><a class="ok bx-socialsidebar-icon" target="-blank" href="https://ok.ru/group/56763340881928"></a></li>
+					</ul>
+	</div>
 </div>
-<div id="hero_customer_name" class="a-section a-spacing-none a-spacing-top-medium"> <span class="a-size-base a-text-bold">Fran Drescher</span>
-</div><div id="hero_customer_title" class="a-section a-spacing-top-extra-small"> <span class="a-size-base">President of SAG-AFTRA</span>
-</div></div>
-<div class="a-section a-spacing-double-large a-spacing-top-large a-text-left">
-<span class="a-button a-button-primary"><span class="a-button-inner"><a href="https://pro.imdb.com/signup/tiers?ref_=spl_duet_signup" data-bypassPublicRestriction="true" class="a-button-text" role="button"><span class="a-size-small"> Try IMDbPro for free
-</span></a></span></span>
+		</div>
+
+		    <!-- POPUP -->
+    <div class="popup popup-notice"></div>
+    <!-- ERROR -->
+    <div class="popup popup-error"></div>
+    <!-- SUCCES -->
+    <div class="popup popup-success"></div>
+
+    <div id="modal" class="modal animated fadeIn" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h2 class="modal-title"></h2>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-orange js-modal-submit" data-dismiss="modal">Ок</button>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div id="confirm" class="modal animated fadeIn" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h2 class="modal-title"></h2>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-orange js-confirm" data-dismiss="modal">Да</button>
+        <button type="button" class="btn btn-transparent" data-dismiss="modal">Нет</button>
+      </div>
+    </div>
+  </div>
 </div>
-<!-- Video/Image for the hero widget -->
-<div class="a-column a-span6 a-span-last"><div class="a-section a-spacing-large a-spacing-top-double-large a-text-left">
-<div class="a-section a-spacing-none a-spacing-top-none vimeo_video_wrapper"> <iframe sandbox="allow-scripts allow-same-origin" src=https://player.vimeo.com/video/780526921?byline=0 frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div><div class="a-section a-spacing-top-medium"><span class="a-size-medium"> Watch the demo video
-</span></div></div></div></div></div></div></div></div>
-</span>
-<script type="text/javascript">
-if(typeof uex === 'function'){uex('ld','HeroWidget',{wb:1});}
-</script>
-<a name="slot_center-4"></a>
-<script type="text/javascript">if(typeof uet === 'function'){uet('bb','ValuePropWidget',{wb:1});}</script>
-<span class="ab_widget">
-<div id="value_prop_widget" class="a-section a-spacing-none background_color_snow"><div class="a-section a-padding-extra-large a-text-center content_container"><div class="a-row"><div class="a-column a-span4">
-<div class="a-row"><div class="a-column a-span12 a-span-last"><p class="a-spacing-extra-large a-spacing-top-extra-large a-size-large"> Expand your network
-</p><span class="a-size-base a-color-tertiary"> Find contact info, get representation, search up-and-coming talent, and browse job opportunities.
-</span></div></div></div><div class="a-column a-span4">
-<div class="a-row"><div class="a-column a-span12 a-span-last"><p class="a-spacing-extra-large a-spacing-top-extra-large a-size-large"> Showcase yourself
-</p><span class="a-size-base a-color-tertiary"> Optimize your IMDb page with Known For titles, demo reels, featured images &amp; videos, and demographic info.
-</span></div></div></div><div class="a-column a-span4 a-span-last">
-<div class="a-row"><div class="a-column a-span12 a-span-last"><p class="a-spacing-extra-large a-spacing-top-extra-large a-size-large"> Access exclusive content
-</p><span class="a-size-base a-color-tertiary"> Explore in-development titles, box office data, and industry rankings to make informed decisions.
-</span></div></div></div></div>
-<div class="a-section a-spacing-top-double-large">
-<div class="a-section a-text-center">
-<a class="a-link-normal button_link" target="_self" rel="noopener" href="https://pro.imdb.com/signup/tiers"><div class="a-box a-text-center a-width-large box_link no_border"><div class="a-box-inner"><span class="a-size-base"> Try IMDbPro for free
-</span></div></div></a>
-</div></div>
-</div></div>
-</span>
-<script type="text/javascript">
-if(typeof uex === 'function'){uex('ld','ValuePropWidget',{wb:1});}
-</script>
-<a name="slot_center-5"></a>
-<script type="text/javascript">if(typeof uet === 'function'){uet('bb','IntroductionWidget',{wb:1});}</script>
-<span class="ab_widget">
-<div class="a-section"><div id="introduction_widget" class="a-section a-padding-extra-large content_container no_bottom_padding"><div class="a-section a-text-center widgets-content-size">
-<div class="a-fixed-right-grid"><div class="a-fixed-right-grid-inner a-grid-vertical-align a-grid-center"><div class="a-fixed-right-grid-col a-col-left" style="padding-right:0%;float:left;"><div class="a-section a-text-left"><span class="a-size-large"> Market yourself
-</span></div>
-<div class="a-section a-spacing-top-base a-text-left"><span class="a-size-base"> &quot;IMDbPro helps me formulate a strategy on how best to market myself to any number of people involved — casting, producers, directors, etc. It’s like connecting the dots.&quot; – Alexander Bedria, actor
-</span></div>
-<div class="a-section a-spacing-base a-spacing-top-base a-text-left">
-<span class="a-button a-button-primary"><span class="a-button-inner"><a href="https://pro.imdb.com/signup/tiers?ref_=spl_intro_signup" data-bypassPublicRestriction="true" class="a-button-text" role="button"><span class="a-size-"> Try IMDbPro for free
-</span></a></span></span>
+
+<div id="return" class="modal animated fadeIn" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form action="" name="return" method="post" enctype="multipart/form-data" class="form ajax-form ajax-form-modal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h2 class="modal-title">Заявка на возврат позиции</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="error-container"></div>
+                    <div class="row form-group">
+                        <div class="col-sm-4">Деталь</div>
+                        <div class="col-sm-8">
+                            <input type="text" name="part_name" value="" class="form-control" disabled>
+                            <input type="hidden" name="part_name" value="">
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-sm-4">Возвращаемое количество</div>
+                        <div class="col-sm-8">
+                            <div class="input-group input-group-primary">
+                                <span class="input-group-addon-custom input-group-addon-custom-left js-minus"><i class="qnt__control fa fa-minus"></i></span>
+                                <input class="input-quantity js-quantity"
+                                       data-max=""
+                                       data-step=""
+                                       type="text"
+                                       name="quantity"
+                                       value="1"
+                                       size="3"
+                                       rel="quantity"
+                                >
+                                <span class="input-group-addon-custom input-group-addon-custom-right js-plus"><i class="qnt__control fa fa-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row form-group js-return-reason-wrapper">
+                        <div class="col-sm-4">Причина возврата</div>
+                        <div class="col-sm-8">
+                            <select name="Причина" class="js-return-reason form-control" required>
+                                <option value="">Выберите причину возврата</option>
+                                <option value="Недопоставка">Недопоставка</option>
+                                <option value="Пересортировка">Пересортировка</option>
+                                <option value="Возврат товара" class="js-return-option">Возврат товара</option>
+                                <option value="Отказ при приеме товара">Отказ при приеме товара</option>
+                                <option value="Брак">Брак</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row form-group js-return-subreason hidden">
+                        <div class="col-sm-4">Подпричина возврата</div>
+                        <div class="col-sm-8">
+                            <select name="Подпричина" class="form-control js-return-subreason-input">
+                                <option class="" value="">Выберите уточнение</option>
+                                <option class="hidden js-return-subreason-1" value="Отказ клиента">Отказ клиента</option>
+                                <option class="hidden js-return-subreason-2" value="Ошибка кросса">Ошибка кросса</option>
+                                <option class="hidden js-return-subreason-3" value="Ошибка подбора">Ошибка подбора</option>
+                                <option class="hidden js-return-subreason-4" value="Товар не укомплектован">Товар не укомплектован</option>
+                                <option class="hidden js-return-subreason-5" value="Подозрение на контрафакт">Подозрение на контрафакт</option>
+                                <option class="hidden js-return-subreason-6" value="Нарушение сроков поставки">Нарушение сроков поставки</option>
+                                <option class="hidden js-return-subreason-7" value="Контрафакт">Контрафакт</option>
+                                <option class="hidden js-return-subreason-8" value="Брак">Брак</option>
+                                <option class="hidden js-return-subreason-9" value="До установки на авто">До установки на авто</option>
+                                <option class="hidden js-return-subreason-10" value="После установки на авто">После установки на авто</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row form-group hidden js-return-condition">
+                        <div class="col-sm-4">Состояние упаковки</div>
+                        <div class="col-sm-8">
+                            <select name="Состояние" class="form-control js-return-condition-input">
+                                <option value="">Выберите состояние упаковки</option>
+                                <option value="Не вскрывалась">Не вскрывалась</option>
+                                <option value="Вскрыта">Вскрыта</option>
+                                <option value="Без упаковки">Без упаковки</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row form-group hidden js-return-installion">
+                        <div class="col-sm-4">Следы установки</div>
+                        <div class="col-sm-8">
+                            <select name="СледыУстановки" class="form-control js-return-installion-input">
+                                <option value="">Выберите вариант</option>
+                                <option value="Без следов установки">Без следов установки</option>
+                                <option value="Со следами установки">Со следами установки</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row form-group hidden js-return-auto">
+                        <div class="col-sm-4">VIN/Frame</div>
+                        <div class="col-sm-8">
+                            <input type="text" name="VIN" value="" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="row form-group hidden js-return-auto">
+                        <div class="col-sm-4">Марка автомобиля</div>
+                        <div class="col-sm-8">
+                            <input type="text" name="МаркаАвтомобиля" value="" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="row form-group hidden js-return-auto">
+                        <div class="col-sm-4">Пробег на момент установки</div>
+                        <div class="col-sm-8">
+                            <input type="text" name="ПробегНаМоментУстановки" value="" class="form-control" placeholder="Пробег в километрах"/>
+                        </div>
+                    </div>
+                    <div class="row form-group hidden js-return-auto">
+                        <div class="col-sm-4">Пробег на момент снятия</div>
+                        <div class="col-sm-8">
+                            <input type="text" name="ПробегНаМоментСнятия" value="" class="form-control" placeholder="Пробег в километрах"/>
+                        </div>
+                    </div>
+
+                    <div class="row form-group hidden js-return-photo">
+                        <div class="col-sm-12">
+                            <p class="alert alert-warning">Чем больше информативных фото, тем быстрее мы примем решение<br/>
+                            Уважаемые клиенты! Для отправки заявки необходимо приложить <b>все</b> фотографии</p>
+                        </div>
+                    </div>
+
+                    <div class="row form-group hidden js-return-photo-1">
+                        <div class="col-sm-4">Фото упаковки (общий вид)</div>
+                        <div class="col-sm-5">
+                            <input type="file" name="ФотоУпаковкиОбщийВид[]">
+                        </div>
+                        <div class="col-sm-3">
+                            <a class="js-btn-file-more-plus"><i class="fas fa-plus-square"></i> добавить файл</a>
+                        </div>
+                    </div>
+
+                    <div class="row form-group hidden js-return-photo-2">
+                        <div class="col-sm-4">Фото стикеров маркировки на упаковке</div>
+                        <div class="col-sm-5">
+                            <input type="file" name="ФотоСтикеровМаркировкиНаУпаковке[]">
+                        </div>
+                        <div class="col-sm-3">
+                            <a class="js-btn-file-more-plus"><i class="fas fa-plus-square"></i> добавить файл</a>
+                        </div>
+                    </div>
+
+                    <div class="row form-group hidden js-return-photo-3">
+                        <div class="col-sm-4">Фото детали</div>
+                        <div class="col-sm-5">
+                            <input type="file" name="ФотоДетали[]">
+                        </div>
+                        <div class="col-sm-3">
+                            <a class="js-btn-file-more-plus"><i class="fas fa-plus-square"></i> добавить файл</a>
+                        </div>
+                    </div>
+
+                    <div class="row form-group hidden js-return-photo-4">
+                        <div class="col-sm-4">Фото недостатка товара</div>
+                        <div class="col-sm-5">
+                            <input type="file" name="ФотоНедостаткаТовара[]">
+                        </div>
+                        <div class="col-sm-3">
+                            <a class="js-btn-file-more-plus"><i class="fas fa-plus-square"></i> добавить файл</a>
+                        </div>
+                    </div>
+
+                    <div class="row form-group hidden js-return-photo-5">
+                        <div class="col-sm-4">Фото упаковки</div>
+                        <div class="col-sm-5">
+                            <input type="file" name="ФотоУпаковки[]">
+                        </div>
+                        <div class="col-sm-3">
+                            <a class="js-btn-file-more-plus"><i class="fas fa-plus-square"></i> добавить файл</a>
+                        </div>
+                    </div>
+
+                    <div class="row form-group hidden js-return-photo-6">
+                        <div class="col-sm-4">Фото общего вида товара</div>
+                        <div class="col-sm-5">
+                            <input type="file" name="ФотоОбщегоВидаТовара[]">
+                        </div>
+                        <div class="col-sm-3">
+                            <a class="js-btn-file-more-plus"><i class="fas fa-plus-square"></i> добавить файл</a>
+                        </div>
+                    </div>
+
+                    <div class="row form-group hidden js-return-photo-7">
+                        <div class="col-sm-4">Фото маркировки на товаре</div>
+                        <div class="col-sm-5">
+                            <input type="file" name="ФотоМаркировкиНаТоваре[]">
+                        </div>
+                        <div class="col-sm-3">
+                            <a class="js-btn-file-more-plus"><i class="fas fa-plus-square"></i> добавить файл</a>
+                        </div>
+                    </div>
+
+                    <div class="row form-group hidden js-return-photo-8">
+                        <div class="col-sm-4">Фото упаковки (при наличии)</div>
+                        <div class="col-sm-5">
+                            <input type="file" name="ФотоУпаковкиПриНаличии[]">
+                        </div>
+                        <div class="col-sm-3">
+                            <a class="js-btn-file-more-plus"><i class="fas fa-plus-square"></i> добавить файл</a>
+                        </div>
+                    </div>
+
+                    <div class="row form-group hidden js-return-photo-9">
+                        <div class="col-sm-4">Заказ-наряд на установку</div>
+                        <div class="col-sm-5">
+                            <input type="file" name="ЗаказНарядНаУстановку[]">
+                        </div>
+                        <div class="col-sm-3">
+                            <a class="js-btn-file-more-plus"><i class="fas fa-plus-square"></i> добавить файл</a>
+                        </div>
+                    </div>
+
+                    <div class="row form-group hidden js-return-photo-10">
+                        <div class="col-sm-4">Заказ-наряд на снятие</div>
+                        <div class="col-sm-5">
+                            <input type="file" name="ЗаказНарядНаСнятие[]">
+                        </div>
+                        <div class="col-sm-3">
+                            <a class="js-btn-file-more-plus"><i class="fas fa-plus-square"></i> добавить файл</a>
+                        </div>
+                    </div>
+
+                    <div class="row form-group hidden js-return-photo-11">
+                        <div class="col-sm-4">Акт дефектовки</div>
+                        <div class="col-sm-5">
+                            <input type="file" name="АктДефектовки[]">
+                        </div>
+                        <div class="col-sm-3">
+                            <a class="js-btn-file-more-plus"><i class="fas fa-plus-square"></i> добавить файл</a>
+                        </div>
+                    </div>
+
+                    <div class="row form-group hidden js-return-photo-12">
+                        <div class="col-sm-4">Акт об отказе с подписью нашего представителя (водителя)</div>
+                        <div class="col-sm-5">
+                            <input type="file" name="АктОбОтказеСПодписьюПредставителяВодителя[]">
+                        </div>
+                        <div class="col-sm-3">
+                            <a class="js-btn-file-more-plus"><i class="fas fa-plus-square"></i> добавить файл</a>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="row form-group js-return-comment hidden">
+                        <div class="col-sm-4">Комментарий<br/><br/><p class="alert alert-warning">Развернутый комментарий ускоряет процесс согласования возврата</p></div>
+                        <div class="col-sm-8">
+                            <textarea name="comment" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-orange js-return-send" disabled>Отправить</button>
+                    <button type="button" class="btn btn-transparent" data-dismiss="modal">Отмена</button>
+                    <input type="hidden" name="order_id" value="">
+                    <input type="hidden" name="basket_id" value="">
+                    <input type="hidden" name="form_return" value="1">
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
+
+<div id="cancel" class="modal animated fadeIn" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form action="" name="cancel" method="post" enctype="multipart/form-data" class="form ajax-form ajax-form-modal">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h2 class="modal-title">Заявка на отмену позиции</h2>
+        </div>
+        <div class="modal-body">
+          <div class="error-container"></div>
+          <div class="row form-group hidden">
+            <div class="col-sm-4">Деталь</div>
+            <div class="col-sm-8">
+              <input type="text" name="part_name" value="" class="form-control" disabled>
+              <input type="hidden" name="part_name" value="">
+            </div>
+          </div>
+          <div class="js-basket-info">
+          </div>
+          <div class="row form-group">
+            <div class="col-sm-4">Возвращаемое количество</div>
+            <div class="col-sm-8">
+              <div class="input-group input-group-primary">
+                <span class="input-group-addon-custom input-group-addon-custom-left js-minus"><i class="qnt__control fa fa-minus"></i></span>
+                <input class="input-quantity js-quantity"
+                  data-max=""
+                  data-step=""
+                  type="text"
+                  name="quantity"
+                  value="1"
+                  size="3"
+                  rel="quantity"
+                  >
+                <span class="input-group-addon-custom input-group-addon-custom-right js-plus"><i class="qnt__control fa fa-plus"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-sm-4">Комментарий</div>
+            <div class="col-sm-8">
+              <textarea name="comment" cols="30" rows="5" class="form-control"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-orange">Отправить</button>
+          <button type="button" class="btn btn-transparent" data-dismiss="modal">Отмена</button>
+          <input type="hidden" name="order_id" value="">
+          <input type="hidden" name="basket_id" value="">
+          <input type="hidden" name="form_cancel" value="1">
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
-<div class="a-fixed-right-grid-col a-col-right" style="width:300px;margin-right:-300px;float:left;"><img alt="" src="https://m.media-amazon.com/images/G/01/IMDbPro/images/MI_032520_WK_LandingPageRedesign_imageDetail.png"></div></div></div></div></div></div>
-</span>
-<script type="text/javascript">
-if(typeof uex === 'function'){uex('ld','IntroductionWidget',{wb:1});}
-</script>
-<a name="slot_center-8"></a>
-<script type="text/javascript">if(typeof uet === 'function'){uet('bb','TestimonialWidget',{wb:1});}</script>
-<span class="ab_widget">
-<div id="testimonial-widget" class="a-section grey-bg"><div class="a-section a-spacing-none a-padding-extra-large a-text-center widgets-content-size"> <div class="a-section a-spacing-medium a-spacing-top-mini"><span class="a-size-large a-color-base">What industry leaders are saying</span></div>
-<div class="a-row a-spacing-top-none"><div class="a-column a-span4"><div class="a-section"><img alt="" src="https://m.media-amazon.com/images/G/01/IMDbPro/images/MG_041422_PW_TetimonialRefresh_Hayley1.png" height="121" width="121"><div class="a-section a-spacing-medium"> <span class="a-size-mini a-color-secondary a-text-bold">Hayley Law, Actor, Riverdale</span>
-</div><div class="a-section a-spacing-mini"> <span class="a-size-base a-color-base">&quot;I love IMDbPro because I notice my connections grow every time I use it.&quot;</span>
-</div></div></div><div class="a-column a-span4"><div class="a-section"><img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/IMDbPro/images/amabot/Testimonial/spike_lee._V294097059_.png" height="121" width="121"><div class="a-section a-spacing-medium"> <span class="a-size-mini a-color-secondary a-text-bold">Spike Lee, Director, Malcolm X</span>
-</div><div class="a-section a-spacing-mini"> <span class="a-size-base a-color-base">&quot;When I have to get credits I use IMDbPro.&quot;</span>
-</div></div></div><div class="a-column a-span4 a-span-last"><div class="a-section"><img alt="" src="https://m.media-amazon.com/images/G/01/IMDbPro/images/MG_041422_PW_TetimonialRefresh_Brett3.png" height="121" width="121"><div class="a-section a-spacing-medium"> <span class="a-size-mini a-color-secondary a-text-bold">Brett Haley, Writer/Director, All Together Now</span>
-</div><div class="a-section a-spacing-mini"> <span class="a-size-base a-color-base">&quot;I’ve used IMDbPro to cast all of my movies in one way or another.&quot;</span>
-</div></div></div></div></div></div>
-</span>
-<script type="text/javascript">
-if(typeof uex === 'function'){uex('ld','TestimonialWidget',{wb:1});}
-</script>
-<a name="slot_center-9"></a>
-<script type="text/javascript">if(typeof uet === 'function'){uet('bb','IntroductionWidget',{wb:1});}</script>
-<span class="ab_widget">
-<div class="a-section"><div id="introduction_widget" class="a-section a-padding-extra-large content_container no_bottom_padding"><div class="a-section a-text-center widgets-content-size">
-<div class="a-fixed-right-grid"><div class="a-fixed-right-grid-inner a-grid-vertical-align a-grid-center"><div class="a-fixed-right-grid-col a-col-left" style="padding-right:0%;float:left;"><div class="a-section a-text-left"><span class="a-size-large"> 11M people are on IMDb, find the one you need
-</span></div>
-<div class="a-section a-spacing-top-base a-text-left"><span class="a-size-base"> Looking to staff your next project or find up and coming talent? Try our most advanced search and list-building tools that help you find the people and projects you need.
-</span></div>
-<div class="a-section a-spacing-base a-spacing-top-base a-text-left">
-<span class="a-button a-button-primary"><span class="a-button-inner"><a href="https://pro.imdb.com/signup/tiers?ref_=spl_intro_signup" data-bypassPublicRestriction="true" class="a-button-text" role="button"><span class="a-size-"> Start your 30-day free trial
-</span></a></span></span>
+
+<div id="deliveryModal" class="modal animated fadeIn" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+<form class="form ajax-form ajax-reload delivery-modal" name="delivery">
+	<div class="modal-header">
+		<h2 class="modal-title">Адреса и сроки доставки</h2>
+	</div>
+
+	<div class="modal-body">		
+				<!-- <img class="ADDRESS_icon" src="/local/templates/technoparts_v2/app/images/header-address-icon.png"> -->
+
+		
+						  							Выбранный адрес доставки: 108814, Москва, поселение Сосенское, д. Николо-Хованское</span>
+	  			    
+		<div class="mt40 js-view">
+			<h3><b>Вид отображения сроков доставки</b></h3>
+			<div class="form-group">
+                <label><input type="radio" name="view" value="2" checked>Отображать дату готовности <span>на складе</span></label>
+			</div>
+            <div class="form-group">
+                <label><input type="radio" name="view" value="1"  >Отображать дату доставки до адреса</label>
+            </div>
+			<div class="form-group">
+				<label><input type="radio" name="view" value="3"  >Отображать обе даты</label>
+			</div>
+		</div>
+
+		
+			  <div class="error-container"></div>
+	  <div class="clearfix"></div>
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-orange">Выбрать</button>
+    <button type="button" class="btn btn-transparent" data-dismiss="modal">Закрыть</button>
+  	<input type="hidden" name="change_delivery" value="1">
+  	<input type="hidden" name="partner_id" value="">
+  	<input type="hidden" id="basketCount" name="count_basket" value="">
+  </div>
+</form>
+    </div>
+  </div>
 </div>
+
+
+
+<div id="wrong-cross" class="modal animated fadeIn" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form action="" name="wrong-cross" method="post" enctype="multipart/form-data" class="form ajax-form no-loading multiple">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h2 class="modal-title">Сообщить о неправильном кроссе</h2>
+        </div>
+        <div class="modal-body">
+          <p>Уважаемый клиент! Если Вы считаете, что для данной детали выдана неверная информация по его замене, пожалуйста, заполните этй форму, указав в комментарий всё необходимое.</p>
+          <div class="form-group">
+            <div class="error-container"></div>
+          </div>
+          <div class="row form-group">
+            <div class="col-sm-4">Оригинальная деталь</div>
+            <div class="col-sm-8">
+              <span class="part_from"></span>
+              <input type="hidden" name="part_from" value="">
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-sm-4">Замена</div>
+            <div class="col-sm-8">
+              <span class="part_to"></span>
+              <input type="hidden" name="part_to" value="">
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-sm-4">Комментарий</div>
+            <div class="col-sm-8">
+              <textarea name="comment" cols="30" rows="5" class="form-control"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-orange">Отправить</button>
+          <button type="button" class="btn btn-transparent" data-dismiss="modal">Отмена</button>
+          <input type="hidden" name="form_wrong_cross" value="1">
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
-<div class="a-fixed-right-grid-col a-col-right" style="width:300px;margin-right:-300px;float:left;"><img alt="" src="https://m.media-amazon.com/images/G/01/IMDbPro/images/discover_details_tall.png"></div></div></div></div></div></div>
-</span>
-<script type="text/javascript">
-if(typeof uex === 'function'){uex('ld','IntroductionWidget',{wb:1});}
-</script>
-<a name="slot_center-10"></a>
-<script type="text/javascript">if(typeof uet === 'function'){uet('bb','AppPromoWidget',{wb:1});}</script>
-<span class="ab_widget">
-<div id="app_promo_widget" class="a-section background-image-wrapper"><img alt="" src="https://m.media-amazon.com/images/G/01/IMDbPro/images/AppBackground.CB493288977._CB1538515901_.jpg" class="background-image" width="100%"><div class="a-section background-image-content"><div class="a-section a-padding-double-large content_container"><div class="a-row"><div class="a-column a-span3 a-push2 a-spacing-top-double-large"><img alt="" src="https://m.media-amazon.com/images/G/01/IMDbPro/images/amabot/splash/mobilePromo/AppScreen-B._CB493289197_.png"></div><div class="a-column a-span5 a-pull1 a-spacing-top-double-large a-span-last"><h2 class="a-spacing-medium a-spacing-top-double-large"> Stay connected with the IMDbPro app for iOS and Android
-</h2><p class="a-spacing-extra-large a-size-medium a-color-tertiary"> Wherever you are, access the entertainment industry&#39;s essential information resource
+
+<div id="deleteItemFromSection" class="modal animated fadeIn" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h2 class="modal-title">Уточните действие</h2>
+      </div>
+      <div class="modal-body form">
+        <div class="error-container"></div>
+        <p>Товар найден в нескольких списках, пожалуйста, уточните откуда нужно удалить товар.</p>
+        <div class="row form-group">
+            <div class="col-sm-2 mt10">Список:</div>
+            <div class="col-sm-10">
+              <select name="sectionId" class="form-control">
+                <option value="">Удалить из всех списков</option>
+              </select>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <input type="hidden" name="brand" value="">
+        <input type="hidden" name="article" value="">
+        <button type="button" class="btn btn-orange js-delete-item-submit">Удалить</button>
+        <button type="button" class="btn btn-transparent" data-dismiss="modal">Отмена</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="itemAddModal" class="modal animated fadeIn" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h2 class="modal-title">Выберите список</h2>
+      </div>
+      <div class="modal-body form">
+        <p>Пожалуйста, укажите в какой список вы хотите добавить этот товар</p>
+        <select name="section_id" class="form-control js-fav-sections">
+            <option value="0">Избранное</option>
+        </select>
+      </div>
+      <div class="modal-footer">
+        <input type="hidden" name="brand" value="">
+        <input type="hidden" name="article" value="">
+        <button type="button" class="btn btn-orange js-favs-item-add-submit">Добавить</button>
+        <button type="button" class="btn btn-transparent" data-dismiss="modal">Отмена</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="priceChangeModal" class="modal animated fadeIn" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h2 class="modal-title">Сообщить об изменении цены</h2>
+      </div>
+      <div class="modal-body form">
+        <p>Когда цена на товар будет снижена, вам придёт уведомление</p>
+        <div class="row form-group">
+            <div class="col-sm-2 mt10">Процент</div>
+            <div class="col-sm-10">
+              <input type="text" class="form-control price-input js-quantity" name="percent" value="" max="100"> %
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <input type="hidden" name="brand" value="">
+        <input type="hidden" name="article" value="">
+        <input type="hidden" name="price" value="">
+        <input type="hidden" name="title" value="">
+        <button type="button" class="btn btn-orange js-price-change-submit">Добавить</button>
+        <button type="button" class="btn btn-transparent" data-dismiss="modal">Отмена</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="brandModal" class="modal animated fadeIn" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h2 class="modal-title"></h2>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-transparent" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal fade" id="welcome" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">
+                        Отключение оповещений по смс и переход на Телеграм                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div style="text-align: justify; line-height: 25px;">
+                        <p style="text-align: center;">
+ <b>&nbsp;Уважаемые партнеры!</b><br>
 </p>
-<span class="a-button a-button-primary"><span class="a-button-inner"><a href="https://pro.imdb.com/signup/tiers?ref_=spl_app_promo_signup" data-bypassPublicRestriction="true" class="a-button-text" role="button"><span class="a-size-"> Try IMDbPro for free
-</span></a></span></span>
-</div></div></div></div></div>
-</span>
-<script type="text/javascript">
-if(typeof uex === 'function'){uex('ld','AppPromoWidget',{wb:1});}
-</script>
-<a name="slot_center-12"></a>
-<script type="text/javascript">if(typeof uet === 'function'){uet('bb','PricingWidget',{wb:1});}</script>
-<span class="ab_widget">
-<!-- Display pricing widget for logged out, expired subscription, or if the always display flag is set -->
-<div id="pricing_widget_v1" class="a-section a-spacing-none white-bg"><div class="a-section a-padding-extra-large content_container"><div class="a-section a-spacing-none a-spacing-top-none a-text-center"><span class="a-size-large a-color-"> How much does a membership cost?
-</span></div><div class="a-row a-spacing-top-medium"><div class="a-column a-span5 a-push1"><img alt="" src="https://m.media-amazon.com/images/G/01/IMDbPro/images/chime/MI_120320_NB_Pricing_Widget.png"></div><div class="a-column a-span5 a-pull1 a-spacing-top-none a-span-last"><div class="a-box-group a-spacing-none a-spacing-top-none" role="list"><div class="a-box"><div class="a-box-inner a-padding-base">
-<div class="a-row"><div class="a-column a-span6 a-text-left"><span class="a-size-base a-color-base a-text-bold"> Annual Price
-</span></div><div class="a-column a-span12 a-text-right a-spacing-none a-span-last"><span class="a-size-medium a-color-base"> $12.50/month
-</span></div></div><div class="a-row"><div class="a-section a-text-right"><span class="a-size-base a-color-secondary"> Billed annually ($149.99)
-</span></div></div></div></div><div class="a-box"><div class="a-box-inner a-padding-base">
-<div class="a-row"><div class="a-column a-span6 a-text-left"><span class="a-size-base a-color-base a-text-bold"> Monthly Price
-</span></div><div class="a-column a-span12 a-text-right a-spacing-medium a-span-last"><span class="a-size-medium a-color-base"> $19.99/month
-</span></div></div></div></div></div>
-<div class="a-section a-spacing-double-large a-spacing-top-small a-text-right"><span class="a-size-base-plus"><div class="a-section a-spacing-none"> Need more than one membership?
-</div><div class="a-section a-spacing-top-none"><a class="a-size- a-align- a-link-" href="https://pro.imdb.com/groupplan?ref_=spl_pricing_gp"> Learn about a group plan
-</a></div></span></div>
-<div class="a-section a-spacing-none a-spacing-top-small"><span class="a-size-medium a-color-base"> Get access to industry data. Try it free for 30 days.
-</span></div>
-<div class="a-section a-spacing-none a-spacing-top-small">
-<span class="a-button a-button-primary"><span class="a-button-inner"><a href="https://pro.imdb.com/signup/tiers?pf_rd_r=4MYRKZH98GES6K87E04P&pf_rd_s=center-12&pf_rd_i=splash&pf_rd_t=43801&pf_rd_p=056c1191-ce16-42ae-a823-be08563b096b" data-bypassPublicRestriction="true" class="a-button-text" role="button"><span class="a-size-"> Try IMDbPro for free
-</span></a></span></span>
-</div>
-</div></div></div></div>
-</span>
-<script type="text/javascript">
-if(typeof uex === 'function'){uex('ld','PricingWidget',{wb:1});}
-</script>
-<a name="slot_center-15"></a>
-<script type="text/javascript">if(typeof uet === 'function'){uet('bb','ProNavigationWidget',{wb:1});}</script>
-<span class="ab_widget">
-<hr class="a-spacing-none a-divider-normal"><div id="learn_more_navigation_widget" class="a-section a-padding-large a-text-center widgets-content-size"><div class="a-section"><span class="a-size-medium"> Learn more about IMDbPro:
-</span></div><div class="a-section a-spacing-none"><div class="a-section a-spacing-none a-padding-none learn-more-nav--one-nav-container"><a class="a-size- a-align- a-link-" href="https://pro.imdb.com/app?ref_=spl_apl_nav"><div class="a-box a-spacing-small a-text-center box_link no_border"><div class="a-box-inner"><span class="a-size-base"> Mobile App
-</span></div></div></a></div><div class="a-section a-spacing-none a-padding-none learn-more-nav--one-nav-container"><a class="a-size- a-align- a-link-" href="https://pro.imdb.com/industrynews?ref_=spl_newslp_nav"><div class="a-box a-spacing-small a-text-center box_link no_border"><div class="a-box-inner"><span class="a-size-base"> Industry News
-</span></div></div></a></div><div class="a-section a-spacing-none a-padding-none learn-more-nav--one-nav-container"><a class="a-size- a-align- a-link-" href="https://pro.imdb.com/groupplan?ref_=spl_gplp_nav"><div class="a-box a-spacing-small a-text-center box_link no_border"><div class="a-box-inner"><span class="a-size-base"> Group Plan
-</span></div></div></a></div><div class="a-section a-spacing-none a-padding-none learn-more-nav--one-nav-container"><a class="a-size- a-align- a-link-" href="https://pro.imdb.com/content/featured?ref_=spl_rsrc_nav"><div class="a-box a-spacing-small a-text-center box_link no_border"><div class="a-box-inner"><span class="a-size-base"> Professional Resources
-</span></div></div></a></div></div></div><hr class="a-spacing-none a-divider-normal">
-</span>
-<script type="text/javascript">
-if(typeof uex === 'function'){uex('ld','ProNavigationWidget',{wb:1});}
-</script>
+<p style="text-align: center;">
+	 Мы создали телеграм-бот, чтобы Вы были в курсе наших новостей.
+</p>
+<p style="text-align: center;">
+	 Через телеграм-бот Вы можете оперативно получать информацию об изменениях статуса Ваших заказов и Ваших заявок на возврат.<br>
+</p>
+<p style="text-align: center;">
+ <span style="color: #ff0000;">Внимание!</span> Оповещения через смс будут отключены.<br>
+</p>
+<p style="text-align: center;">
+	 Для подключения к телеграм-боту перейдите, пожалуйста, по 
+	<!--noindex--><a rel="nofollow" href="https://t.me/v01rubot" target="_blank">ссылке</a><!--/noindex-->&nbsp;или отсканируйте QR-код.
+</p>
+<p tyle="text-align: center;" style="text-align: center;">
+ <img width="132" alt="qr-code (1).gif" src="/upload/medialibrary/f7b/qr-code (1).gif" height="132" title="qr-code (1).gif" align="middle"><br>
+</p>
+<p style="text-align:center;">
+ <b>С уважением,&nbsp;</b>
+</p>
+<p style="text-align:center;">
+ <b>Команда «М Партс»</b><br>
+</p>                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="checkbox" class="no-more-show__input" name="delete-modal" id="js-delete-modal" data-id="7395310"><label class="no-more-show" for="js-delete-modal">Больше не показывать</label>
+                    <button type="button" class="btn btn-orange" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .no-more-show {
+            color: #224089;
+            font-size: 14px;
+            margin: 0 20px 0 5px;
+        }
+
+        input[type="checkbox"]:checked,
+        input[type="checkbox"]:not(:checked) {
+            position: absolute;
+            left: -9999px;
+        }
+
+        input[type="checkbox"]:checked + label,
+        input[type="checkbox"]:not(:checked) + label {
+            display: inline-block;
+            position: relative;
+            padding-left: 28px;
+            line-height: 20px;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"]:checked + label:before,
+        input[type="checkbox"]:not(:checked) + label:before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #dddddd;
+            background-color: #ffffff;
+        }
+
+        input[type="checkbox"]:checked + label:before,
+        input[type="checkbox"]:not(:checked) + label:before {
+            border-radius: 2px;
+        }
+
+        input[type="checkbox"]:checked + label:after,
+        input[type="checkbox"]:not(:checked) + label:after {
+            content: "";
+            position: absolute;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+
+        input[type="checkbox"]:checked + label:after,
+        input[type="checkbox"]:not(:checked) + label:after {
+            left: 3px;
+            top: 1px;
+            width: 10px;
+            height: 5px;
+            content: "\2713";
+            font-size: 16px;
+        }
+
+        input[type="checkbox"]:not(:checked) + label:after {
+            opacity: 0;
+        }
+
+        input[type="checkbox"]:checked + label:after {
+            opacity: 1;
+        }
+    </style>
+    <script>
+        $('#welcome').modal({
+            backdrop: 'static',
+            keyboard: false
+        });
+        $('#welcome').on('hide.bs.modal', function() {
+            console.log($("#js-delete-modal").prop("checked"));
+            if($("#js-delete-modal").prop("checked") === true) {
+                const modal_id = $("#js-delete-modal").attr("data-id");
+                document.cookie = "DELETE_MODAL_ID_"+modal_id+"=YES; path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT";
+            }
+        })
+    </script>
+        
+	            <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(47085474, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/47085474" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159557991-2"></script>
 <script>
-(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5488779"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159557991-2');
 </script>
-<iframe src="/api/tracking/google/remarketing" style="display: none;"
-sandbox="allow-same-origin allow-scripts"></iframe>
-<iframe src="/api/tracking/rodeo/landing" style="display: none;"
-sandbox="allow-same-origin allow-scripts"></iframe>
-</div>
-<!-- Mobile footer layout -->
-<div id="logged_out_footer" class="a-section a-spacing-none"><div class="a-row content_container"><div class="a-column a-span4 a-text-left a-spacing-double-large"><div class="a-section a-padding-large"><div class="a-section"><a class="a-size- a-align-bottom a-link- logo pro_granite aok-inline-block" href="https://pro.imdb.com/?ref_=spl_ftr_hm_i"></a>
-<div class="a-section a-spacing-none reframe__container aok-align-center-horizontally"><div class="a-fixed-left-grid"><div class="a-fixed-left-grid-inner" style="padding-left:40px"><div class="a-text-left a-fixed-left-grid-col a-col-left" style="width:40px;margin-left:-40px;float:left;"><a class="a-size- a-align- a-link- clickable_share_link" target="_blank" rel="noopener" href="https://www.reframeproject.org"><span class="a-declarative" data-action="log_event" data-log_event="{&quot;pageAction&quot;: &quot;footer_reframe&quot;}"><p class="a-spacing-top-mini reframe__icon aok-inline-block"></p></span></a></div><div class="a-text-left a-fixed-left-grid-col reframe__text a-col-right" style="padding-left:0%;float:left;"><div class="a-fixed-left-grid"><div class="a-fixed-left-grid-inner" style="padding-left:140px"><div class="a-fixed-left-grid-col a-col-left" style="width:140px;margin-left:-140px;float:left;"> IMDbPro is a proud sponsor of
-<a class="a-size- a-align- a-link- clickable_share_link" target="_blank" rel="noopener" href="https://www.reframeproject.org"><span class="a-declarative" data-action="log_event" data-log_event="{&quot;pageAction&quot;: &quot;footer_reframe&quot;}"> ReFrame
-</span></a></div></div></div></div></div></div></div><p class="a-spacing-top-medium-plus a-color-offset aok-block">&copy; 1990-2023 IMDb.com, Inc. or its affiliates.</p></div></div></div><div class="a-column a-span8 a-text-right a-spacing-double-large a-span-last"><div class="a-section a-padding-large">
-<div class="a-section a-spacing-extra-large aok-inline-block"><ul class="a-unordered-list a-nostyle a-horizontal"><li><span class="a-list-item">
-<a data-bypassPublicRestriction="true" class="a-size- a-align- a-link-" href="https://help.imdb.com/imdbpro?ref_=pro_spl_ftr_help">Help</a>
-</span></li>
-<span class="a-letter-space"></span><span class="a-letter-space"></span>
-<li><span class="a-list-item"><a data-bypassPublicRestriction="true" class="a-size- a-align- a-link-" target="_blank" rel="noopener" href="https://pro.imdb.com/subagreement?ref_=spl_ftr_subagree"> Subscriber Agreement
-</a></span></li>
-<span class="a-letter-space"></span><span class="a-letter-space"></span>
-<li><span class="a-list-item"><a data-bypassPublicRestriction="true" class="a-size- a-align- a-link-" href="https://help.imdb.com/contact?ref_=spl_ftr_contactus"> Contact Us
-</a></span></li>
-<span class="a-letter-space"></span><span class="a-letter-space"></span>
-<li><span class="a-list-item">
-<a data-bypassPublicRestriction="true" class="a-size- a-align- a-link- clickable_share_link" target="_blank" rel="noopener" href="http://www.imdb.com/privacy?ref_=pro_spl_ftr_privpol"> Privacy Policy
-</a></span></li>
-</ul></div><div class="a-row"><div class="a-column a-span3 a-span-last"><ul class="a-unordered-list a-nostyle a-horizontal"><li><span class="a-list-item"><a class="a-size- a-align- a-link- icon facebook aok-inline-block clickable_share_link" target="_blank" rel="noopener" title="IMDbPro on Facebook" href="https://www.facebook.com/imdbpro"></a></span></li><li><span class="a-list-item"><a class="a-size- a-align- a-link- icon twitter aok-inline-block clickable_share_link" target="_blank" rel="noopener" title="IMDbPro on Twitter" href="https://twitter.com/imdbpro"></a></span></li><li><span class="a-list-item"><a class="a-size- a-align- a-link- icon instagram aok-inline-block clickable_share_link" target="_blank" rel="noopener" title="IMDbPro on Instagram" href="https://www.instagram.com/imdbpro"></a></span></li></ul></div></div></div></div></div></div></div>
-</div></body></html>
+                    <div class="cookie type-1 black">
+        <div class="text">Этот сайт собирает cookie-файлы, данные об IP-адресе и местоположении пользователей.
+            Дальнейшее использование сайта означает ваше согласие на обработку таких данных.
+        </div>
+        <a href="javascript:void(0)" class="js-cookie-btn btn agree"><span>Я согласен</span></a>
+    </div>
+
+<script>
+    $(document).ready(function(){
+        $(".cookie").addClass('show');
+        $('.js-cookie-btn').click(function(){
+            $('.cookie').removeClass('show').addClass('hide');
+            document.cookie = "messages_cookies=true; max-age=31556926";
+            return false;
+        });
+    });
+</script>
+
+</body>
+</html>

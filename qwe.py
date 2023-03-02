@@ -38,10 +38,10 @@ headers = {
 #         "Votes"
 #     ))
 
-with open('num_voices.csv', 'r') as file:
+with open('play_popular.csv', 'r') as file:
     ids = [line.rstrip() for line in file]
 
-for i in range(1533, 40001):
+for i in range(1, 10001):
     film_id = ids[i-1]
     response = requests.get(f'https://pro.imdb.com/title/{film_id}', headers=headers)
 
@@ -50,10 +50,14 @@ for i in range(1533, 40001):
     name_and_date = soup.find('span', class_='a-size-extra-large').find('span', class_=False).text.split('(')
     filmname = name_and_date[0][:-1]
     try:
-        date = ''.join([x for x in name_and_date[1] if x.isdigit()])
+        date = ''.join([x for x in name_and_date[-1] if x.isdigit()] or '-')
     except:
         date = 'NotFound'
-    genres = soup.find('span', id='genres').text.split(', ') # list
+    genres = []
+    try:
+        genres = soup.find('span', id='genres').text.split(', ')  # list
+    except:
+        genres.append('NotFound')
     caster_list = []
     try:
         casters = soup.find('table', id='title_cast_sortable_table').find_all('tr', class_=False)
@@ -75,7 +79,7 @@ for i in range(1533, 40001):
         novel = novel.split('"')[1::2]
     except:
         writer = 'NotFound'
-        novel = 'NotFound'
+        novel = []
         try:
             creator = soup.find('div', id='creator_summary').find('a', class_='a-size- a-align- a-link- ttip').text
         except:
@@ -108,7 +112,7 @@ for i in range(1533, 40001):
         rating = "NotFound"
         votes = "NotFound"
     
-    with open('result.csv', 'a', encoding='utf-8') as f:
+    with open('result_1.csv', 'a', encoding='utf-8') as f:
         wr = csv.writer(f)
         wr.writerow((
             film_id,
