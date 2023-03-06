@@ -1,6 +1,12 @@
 import csv
+import random
+import re
+from time import sleep
 from bs4 import BeautifulSoup
 import requests
+import threading
+import queue
+import pandas as pd
 
 headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
@@ -19,131 +25,57 @@ headers = {
     'sec-ch-ua-platform': '"Linux"',
 }
 
-# with open('result.csv', 'w') as file:
-#     wr = csv.writer(file)
-#     wr.writerow((
-#         "ID",
-#         "Film Name",
-#         "Date",
-#         "Genres",
-#         "Top Actors",
-#         "Director",
-#         "Writer",
-#         "Creator (If writer isn't found)"
-#         "Book",
-#         "Budget",
-#         "Gross US",
-#         "Gross World",
-#         "Rating",
-#         "Votes"
-#     ))
+with open('num_voices.csv', 'r', encoding='utf-8') as file:
+    idis = [line.rstrip() for line in file]
 
-with open('play_popular.csv', 'r') as file:
-    ids = [line.rstrip() for line in file]
+print(1)
 
-for i in range(1, 10001):
-    film_id = ids[i-1]
-    response = requests.get(f'https://pro.imdb.com/title/{film_id}', headers=headers)
+proxies = [
+    {"https://": "3afx92:ho4m7x@88.218.72.200:9655"},
+    {"https://": "3afx92:ho4m7x@88.218.72.200:9655"},
+    {"https://": "3afx92:ho4m7x@88.218.72.200:9655"},
+    {"https://": "3afx92:ho4m7x@88.218.72.200:9655"},
+    {"https://": "3afx92:ho4m7x@88.218.72.200:9655"},		
+]
+
+def make_request(idi):
+    sleep(1)
+    response = requests.get(f'https://pro.imdb.com/title/{idi}/details', headers=headers, proxies=random.choice(proxies))
+
+    print('\n\n','-----> ID: ', idi, '\n\n')
 
     soup = BeautifulSoup(response.text, 'lxml')
-
-    name_and_date = soup.find('span', class_='a-size-extra-large').find('span', class_=False).text.split('(')
-    filmname = name_and_date[0][:-1]
     try:
-        date = ''.join([x for x in name_and_date[-1] if x.isdigit()] or '-')
+        div = soup.find('span', id='title_type').text
     except:
-        date = 'NotFound'
-    genres = []
-    try:
-        genres = soup.find('span', id='genres').text.split(', ')  # list
-    except:
-        genres.append('NotFound')
-    caster_list = []
-    try:
-        casters = soup.find('table', id='title_cast_sortable_table').find_all('tr', class_=False)
-        
-        for cast in casters:
-            caster = cast.find('div', class_='a-section').find('span', class_='a-size-base-plus').text
-            caster_list.append(caster)
-        print('\n\n', caster_list, '\n\n') # caster_list[0 - 3]
-    except:
-        caster_list.append('NotFound')
-    try:
-        director = soup.find('div', id='director_summary').find('a', class_='a-size- a-align- a-link- ttip').text
-    except:
-        director = "NotFound"
-    creator = 'NotFound'
-    try:
-        writer = soup.find('div', id='writer_summary').find('a', class_='a-size- a-align- a-link- ttip').text
-        novel = soup.find('div', id='writer_summary').find('div', class_='a-fixed-left-grid-col a-col-right').find('span', class_='a-color-secondary').text
-        novel = novel.split('"')[1::2]
-    except:
-        writer = 'NotFound'
-        novel = []
-        try:
-            creator = soup.find('div', id='creator_summary').find('a', class_='a-size- a-align- a-link- ttip').text
-        except:
-            creator = 'NotFound'
-    box_office = soup.find('div', id='box_office_summary')
-    try:
-        budget = box_office.find_all('div', class_='a-column a-span5 a-text-right a-span-last')[0].text.replace(' ', '')
-        gross_us = box_office.find_all('div', class_='a-column a-span5 a-text-right a-span-last')[2].text.replace(' ', '')
-        gross_world = box_office.find_all('div', class_='a-column a-span5 a-text-right a-span-last')[3].text.replace(' ', '')
-    except:
-        budget = "NotFound"
-        gross_us = "NotFound"
-        gross_world = "NotFound"
-    try:
-        box_rating = soup.find('div', id='rating_breakdown')
-
-        rating = box_rating \
-            .find('div', class_='a-fixed-right-grid-col a-col-left') \
-            .find_all('span',class_='a-size-medium')[1] \
-            .text \
-            .replace('\n', '')
-        
-        votes = box_rating \
-            .find('div', class_='a-fixed-right-grid-col a-col-left') \
-            .find('span',class_="a-size-small a-color-secondary") \
-            .text.split('|')[-1] \
-            .replace(u'\xa0', u'') \
-            .replace('\n', '')
-    except:
-        rating = "NotFound"
-        votes = "NotFound"
+        div = "NotFound"
     
-    with open('result_1.csv', 'a', encoding='utf-8') as f:
-        wr = csv.writer(f)
-        wr.writerow((
-            film_id,
-            filmname,
-            date,
-            " | ".join(genres),
-            " | ".join(caster_list[:4]),
-            director,
-            writer,
-            creator,
-            novel,
-            budget,
-            gross_us,
-            gross_world,
-            rating,
-            votes
+    with open('result_countries.csv', 'a') as file:
+        writer = csv.writer(file)
+        writer.writerow((
+            idi, div
         ))
-        # "ID",
-        # "Film Name",
-        # "Date",
-        # "Genres",
-        # "Top Actors",
-        # "Director",
-        # "Writer",
-        # "Creator (If writer isn't found)"
-        # "Book",
-        # "Budget",
-        # "Gross US",
-        # "Gross World",
-        # "Rating",
-        # "Votes"
+    
+    print('Done!')
 
+def worker(q):
+    while True:
+        idi = q.get()
+        make_request(idi)
+        q.task_done()
 
-    print('\n\n','----> Номер ID:', i,'-----> ID: ', film_id, '\n\n')
+concurrent_requests = 15
+q = queue.Queue()
+for idi in idis:
+    q.put(idi)
+
+threads = []
+for i in range(concurrent_requests):
+    thread = threading.Thread(target=worker, args=(q,))
+    threads.append(thread)
+    thread.start()
+
+q.join()
+
+for thread in threads:
+    thread.join()
