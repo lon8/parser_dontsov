@@ -25,7 +25,7 @@ headers = {
     'sec-ch-ua-platform': '"Linux"',
 }
 
-with open('num_voices.csv', 'r', encoding='utf-8') as file:
+with open('text.csv', 'r', encoding='utf-8') as file:
     idis = [line.rstrip() for line in file]
 
 print(1)
@@ -40,20 +40,22 @@ proxies = [
 
 def make_request(idi):
     sleep(1)
-    response = requests.get(f'https://pro.imdb.com/title/{idi}/details', headers=headers, proxies=random.choice(proxies))
+    response = requests.get(f'https://pro.imdb.com/title/{idi}/details', headers=headers) #, proxies=random.choice(proxies)
 
     print('\n\n','-----> ID: ', idi, '\n\n')
 
     soup = BeautifulSoup(response.text, 'lxml')
+    div = []
     try:
-        div = soup.find('span', id='title_type').text
+        div = soup.find('div', id='release_details').find('td').text.split(', ')
     except:
-        div = "NotFound"
+        div.append("NotFound")
+    div_f = ','.join(div)
     
     with open('result_countries.csv', 'a') as file:
         writer = csv.writer(file)
         writer.writerow((
-            idi, div
+            idi, div_f
         ))
     
     print('Done!')

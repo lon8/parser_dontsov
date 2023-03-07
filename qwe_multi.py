@@ -25,7 +25,7 @@ headers = {
 }
 
 
-with open('num_voices.csv') as file:
+with open('text.csv') as file:
     idis = [line.rstrip() for line in file]
 
 proxies = [
@@ -43,6 +43,11 @@ def make_request(idi):
     print('\n\n','-----> ID: ', idi, '\n\n')
 
     soup = BeautifulSoup(response.text, 'lxml')
+
+    try:
+        type = soup.find('span', id='title_type').text.replace('\n', '')
+    except:
+        type = "NotFound"
 
     name_and_date = soup.find('span', class_='a-size-extra-large').find('span', class_=False).text.split('(')
     filmname = name_and_date[0][:-1]
@@ -159,7 +164,7 @@ def make_request(idi):
         rating = "NotFound"
         votes = "NotFound"
     
-    with open('result_num.csv', 'a', encoding='utf-8') as f:
+    with open('result.csv', 'a', encoding='utf-8') as f:
         wr = csv.writer(f)
         wr.writerow((
             idi,
@@ -180,7 +185,8 @@ def make_request(idi):
             gross_us,
             gross_world,
             rating,
-            votes
+            votes,
+            type
         ))
 
 def worker(q):
